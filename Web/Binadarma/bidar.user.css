@@ -5,7 +5,7 @@
 @homepageURL  https://github.com/null2264/Zi-Dark/tree/master/Web/Binadarma
 @supportURL   https://github.com/null2264/Zi-Dark/issues
 @updateURL    https://raw.githubusercontent.com/null2264/Zi-Dark/master/Web/Binadarma/bidar.user.css
-@version      20.6.3
+@version      20.6.4
 @author       null2264 <palembani@outlook.com> (https://github.com/null2264)
 @license      GPL-3.0
 @preprocessor stylus
@@ -24,6 +24,15 @@
 }
 
 /* New Codes - 16.05.2020 */
+.hover-tooltip-container .hover-tooltip,
+ .modal-footer{
+    background-color: var(--bgest);
+}
+.content-item-container.notification .content-item-body .notification-message {
+    line-height: 20px;
+    width: calc(100% - 36px);
+    padding-left: 8px;
+}
 .block-myoverview.block-cards .dashboard-card-deck .ml-auto.dropdown {
     background: var(--bger);
 }
@@ -33,7 +42,7 @@
     right: 8px;
     filter: brightness(100);
 }
-.dropdown-item.menu-action > .icon, .moodle-actionmenu .dropdown-item img.icon {
+.dropdown-item.menu-action > .icon, .moodle-actionmenu .dropdown-item img.icon, img.icon, .block_navigation .block_tree .tree_item.branch {
     filter: brightness(100);
 }
 [data-toggle="dropdown"] + .dropdown-menu > .dropdown-item {
@@ -48,7 +57,7 @@
 }
 
 .popover-region-toggle::before, .popover-region-toggle::after {
-    border-bottom: 10px solid var(--bgest);
+    border-bottom: 0px;
     left: -2px;
     right: 14px;
 }
@@ -98,8 +107,18 @@
     border-top: 2px solid var(--bidarBlue);
 }
 
-.block .card-title::before, #page-footer .footerlinks .socials .social_icons a.social {
+.block .card-title::before, #page-footer .footerlinks .socials .social_icons a.social, .content-item-container.notification .content-item-body .notification-image {
     border-radius: 500px;
+}
+.content-item-container.notification .content-item-body .notification-image {
+    background: var(--gray);
+    width: 28px;
+    height: 28px;
+}
+.content-item-container.notification .content-item-body .notification-image img {
+    height: 64%;
+    margin-left: 5px;
+    margin-bottom: -1px;
 }
 #page-footer .socials .social_contact i {
     font-size: 14px;
@@ -132,6 +151,9 @@
 .card-img.dashboard-card-img, .mr-auto, .mx-auto, .path-user #page-header .card {
     border-radius: 10px 10px 0 0;
 }
+.card-img.dashboard-card-img {
+    filter: brightness(40%);
+}
 
 [data-control="previous"] > .page-link {
     border-radius: 10px 0px 0px 10px !important;
@@ -162,7 +184,8 @@ input[type="submit"].btn,
 #block-login input[type="password"],
 #block-login #user,
 #block-login #pass,
-#submit{
+#submit,
+.hover-tooltip-container .hover-tooltip {
     border-radius: 10px 10px!important;
 }
 .dropdown.mb-1.mr-auto .dropdown-menu {
@@ -252,7 +275,8 @@ input[type="submit"].btn,
 
 /* ----------------------- */
 .pagelayout-report .hidden-blocks,
-.popover {
+.popover,
+.modal .modal-content{
     background-color: var(--bg);
 }
 
@@ -894,17 +918,44 @@ textarea {
 }
 /* notif */
 .popover-region-container {
-    background-color: var(--bg);
+    background-color: var(--bgest);
     border: 1px solid var(--bg);
     border-radius: 3px;
+    height: 564px;
+    width: 464px;
+    margin-top: 26px;
+}
+.all-notifications > .content-item-container {
+    padding: 16px;
+}
+.content-item-container .content-item-footer .timestamp {
+    margin-top: 12px;
+    margin-left: 38px;
+}
+.content-item-container .view-more {
+    display: none;
 }
 .popover-region-footer-container,
 .popover-region-header-container {
     background-color: var(--bgest);
     border: 1px solid var(--bgest);
 }
+.popover-region-content-container {
+    background: var(--bg);
+}
+.popover-region-header-container {
+    padding: 12px;
+}
+.popover-region-header-text {
+    line-height: 15px;
+}
+.popover-region-header-actions {
+    line-height: 14px;
+    padding-bottom: 9px;
+}
 .popover-region-footer-container .popover-region-seeall-text {
     color: var(--fg);
+    padding-top:2px;
 }
 .popover-region-footer-container .popover-region-seeall-text:hover {
     color: var(--blue);
@@ -950,11 +1001,12 @@ table.flexible tbody > tr:nth-child(odd) > th,
 .content-item-container {
     border: transparent;
 }
-.content-item-container:hover,
 .content-item-container.unread {
-    background-color: var(--bgest);
+    background-color: var(--bg);
 }
-
+.content-item-container:hover {
+    background-color: var(--bger);
+}
 [src="https://elearning.binadarma.ac.id/pluginfile.php/600/mod_forum/post/350/izman1.jpg"] {
     display: block;
     -moz-box-sizing: border-box;
@@ -1025,6 +1077,16 @@ body {
     --gray: #7f8fa6;
     --blue: #37b0ff;
     --bidarblue: #2271a3;
+}
+
+img.responsive[src="https://sisfo.binadarma.ac.id//assets/images/get_it_on.png"] {
+    background: url(https://raw.githubusercontent.com/null2264/Zi-Dark/master/Web/Binadarma/assets/img/google-play-badge.png);
+    height: 43px;
+    display: block;
+    width: 106px;
+    padding-left: 106px;
+    background-size: 106px;
+    margin-top: -6px;
 }
 
 /* --Txt text */
