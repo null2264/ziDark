@@ -5,26 +5,12 @@
 @homepageURL  https://github.com/null2264/Zi-Dark/tree/master/Web/Binadarma
 @supportURL   https://github.com/null2264/Zi-Dark/issues
 @updateURL    https://raw.githubusercontent.com/null2264/Zi-Dark/master/Web/Binadarma/bidar.user.styl
-@version      20.5.4
+@version      20.5.5
 @author       null2264 <palembani@outlook.com> (https://github.com/null2264)
 @license      GPL-3.0
 @preprocessor stylus
 ==/UserStyle== */
 @-moz-document url-prefix("https://elearning.binadarma.ac.id/") {
-/*
-    * Name:    Binadarma Dark Mode
-    * Author:  Ahmad Ansori Palembani
-    * Version: 20.05rs4
-
-    Versioning info : YY.MMxxB
-    Y  = Year    
-    M  = Month
-    xx = r  = release
-         rc = release candidate
-         b  = beta
-         s  = snapshot
-    B  = Build/Version
-*/
 /* colors */
 :root {
     --bg: #2f3640;
@@ -38,6 +24,12 @@
 }
 
 /* New Codes - 16.05.2020 */
+.block-myoverview.block-cards .dashboard-card-deck .ml-auto.dropdown .coursemenubtn img.icon {
+    position: absolute;
+    top: 8.5px;
+    right: 8px;
+    filter: brightness(0);
+}
 .dropdown-item.menu-action > .icon {
     filter: brightness(100);
 }
@@ -731,7 +723,7 @@ a.dropdown-item.menu-action {
     padding: 1px 3px 2px; 
 }
 .block-myoverview.block-cards .progress .bar {
-    background-color: var(--blue);
+    background-color: var(--bidarBlue);
 }
 .content h3.sectionname a {
     color: var(--fg);
@@ -890,8 +882,8 @@ table#permissions tbody tr:hover > th {
     border-top: 0;
     background: var(--bger);
 }
-.bg-white {
-    background-color: var(--bger)!important;
+.bg-white, .progress {
+    background: var(--bger)!important;
 }
 .border-top,
 textarea {
