@@ -5,7 +5,7 @@
 @homepageURL  https://github.com/null2264/Zi-Dark/tree/master/Web/GitHub
 @supportURL   https://github.com/null2264/Zi-Dark/issues
 @updateURL    https://raw.githubusercontent.com/null2264/Zi-Dark/master/Web/GitHub/github.user.css
-@version      20.6.4
+@version      20.6.5
 @author       null2264 <palembani@outlook.com> (https://github.com/null2264)
 @license      GPL-3.0
 @preprocessor stylus
@@ -62,9 +62,11 @@
     .link-gray-dark,
     .pl-c,
     .blob-code-inner,
-    .blob-num .cm-s-github-light .CodeMirror-linenumber,
+    .blob-num,
+    .cm-s-github-light .CodeMirror-linenumber,
     .CodeMirror pre,
-    .cm-s-github-light.CodeMirror {
+    .cm-s-github-light.CodeMirror,
+    .blob-num{
         color: var(--fg)!important;
     }
 
