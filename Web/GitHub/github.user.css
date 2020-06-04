@@ -1,9 +1,14 @@
 /* ==UserStyle==
-@name           GitHub Zi-Dark
-@namespace      github.com/openstyles/stylus
-@version        20.6.1
-@description    A new userstyle
-@author         null2264
+@name         GitHub Zi-Dark
+@description  Dark Mode for Binadarma website.
+@namespace    github.com/null2264/Zi-Dark
+@homepageURL  https://github.com/null2264/Zi-Dark/tree/master/Web/GitHub
+@supportURL   https://github.com/null2264/Zi-Dark/issues
+@updateURL    https://raw.githubusercontent.com/null2264/Zi-Dark/master/Web/GitHub/github.user.css
+@version      20.6.1
+@author       null2264 <palembani@outlook.com> (https://github.com/null2264)
+@license      GPL-3.0
+@preprocessor stylus
 ==/UserStyle== */
 @-moz-document domain("github.com") {
 
