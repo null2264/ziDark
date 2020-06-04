@@ -5,7 +5,7 @@
 @homepageURL  https://github.com/null2264/Zi-Dark/tree/master/Web/GitHub
 @supportURL   https://github.com/null2264/Zi-Dark/issues
 @updateURL    https://raw.githubusercontent.com/null2264/Zi-Dark/master/Web/GitHub/github.user.css
-@version      20.6.1
+@version      20.6.2
 @author       null2264 <palembani@outlook.com> (https://github.com/null2264)
 @license      GPL-3.0
 @preprocessor stylus
@@ -156,21 +156,21 @@
     }
     .social-count {
         color: var(--fg)!important;
-        background-color: var(--gray);
+        background-color: var(--bidarBlue);
         background-image: none;
         border-radius: 0!important; 
         border: 0;
     }
-    .btn-primary {
+    .btn-primary, .btn-primary:focus {
         color: var(--bgest)!important;
-        background-color: var(--green);
+        background-color: var(--green)!important;
         background-image: none;
         border-radius: 0!important;
         border: 0;
     }
-    .btn-primary:hover, .btn-primary:focus {
+    .btn-primary:hover {
         color: var(--fg)!important;
-        background-color: var(--green);
+        background-color: var(--bidarBlue)!important;
         background-image: none;
         border-radius: 0!important;
         border: 0;
