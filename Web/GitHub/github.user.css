@@ -5,7 +5,7 @@
 @homepageURL  https://github.com/null2264/Zi-Dark/tree/master/Web/GitHub
 @supportURL   https://github.com/null2264/Zi-Dark/issues
 @updateURL    https://raw.githubusercontent.com/null2264/Zi-Dark/master/Web/GitHub/github.user.css
-@version      20.6.5
+@version      20.6.6
 @author       null2264 <palembani@outlook.com> (https://github.com/null2264)
 @license      GPL-3.0
 @preprocessor stylus
@@ -73,7 +73,8 @@
     .application-main,
     .pagehead.repohead,
     .logged-in,
-    .js-user-status-container.user-status-compact.rounded-1.px-2.py-1.mt-2.border {
+    .js-user-status-container.user-status-compact.rounded-1.px-2.py-1.mt-2.border,
+    body{
         background: var(--bg)!important;
         color: var(--fg);
         border: 0;
