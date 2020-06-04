@@ -5,7 +5,7 @@
 @homepageURL  https://github.com/null2264/Zi-Dark/tree/master/Web/GitHub
 @supportURL   https://github.com/null2264/Zi-Dark/issues
 @updateURL    https://raw.githubusercontent.com/null2264/Zi-Dark/master/Web/GitHub/github.user.css
-@version      20.6.2
+@version      20.6.3
 @author       null2264 <palembani@outlook.com> (https://github.com/null2264)
 @license      GPL-3.0
 @preprocessor stylus
@@ -39,15 +39,16 @@
     .form-control,
     .form-select,
     .project-header,
-    .cm-s-github-light.CodeMirror{
+    .cm-s-github-light.CodeMirror {
         background: var(--bg)!important;
         color: var(--fg)!important;
     }
     pre,
     .Box-header.Box-header--blue.position-relative,
     .AvatarStack-body .avatar,
-    .commit-tease .AvatarStack-body,.blob-num,
-    .cm-s-github-light .CodeMirror-linenumber{
+    .commit-tease .AvatarStack-body,
+    .blob-num,
+    .cm-s-github-light .CodeMirror-linenumber {
         background: var(--bger)!important;
     }
     .Header-link,
@@ -60,10 +61,9 @@
     .link-gray-dark,
     .pl-c,
     .blob-code-inner,
-    .blob-num
-    .cm-s-github-light .CodeMirror-linenumber,
+    .blob-num .cm-s-github-light .CodeMirror-linenumber,
     .CodeMirror pre,
-    .cm-s-github-light.CodeMirror{
+    .cm-s-github-light.CodeMirror {
         color: var(--fg)!important;
     }
 
@@ -85,8 +85,10 @@
     .UnderlineNav-item.selected,
     .UnderlineNav-item[aria-current]:not([aria-current="false"]),
     .UnderlineNav-item[role="tab"][aria-selected="true"],
-    .tabnav-tab.selected, .tabnav-tab[aria-current]:not([aria-current="false"]), .tabnav-tab[aria-selected="true"],
-    .CodeMirror pre{
+    .tabnav-tab.selected,
+    .tabnav-tab[aria-current]:not([aria-current="false"]),
+    .tabnav-tab[aria-selected="true"],
+    .CodeMirror pre {
         background: var(--bgest)!important;
         color: var(--fg);
         border-width: 0 0 4px 0;
@@ -120,12 +122,14 @@
     .bg-gray,
     .border,
     .avatar-before-user-status,
-    .file-header, .file{
+    .file-header,
+    .file {
         background: var(--bgest)!important;
         border: 0px!important;
         border-radius: 0;
     }
-    .border-top, .file-navigation .get-repo-btn {
+    .border-top,
+    .file-navigation .get-repo-btn {
         border-top: 1px solid var(--bger)!important;
     }
     .dropdown-divider {
@@ -135,7 +139,9 @@
         vertical-align: middle;
     }
     .btn,
-    .btn.disabled, .btn:disabled, .btn[aria-disabled="true"]{
+    .btn.disabled,
+    .btn:disabled,
+    .btn[aria-disabled="true"] {
         color: var(--fg)!important;
         background-color: var(--bgest);
         background-image: none;
@@ -145,23 +151,25 @@
     .ajax-pagination-form .ajax-pagination-btn {
         color: var(--fg)!important;
         background: var(--bg)!important;
-        border:0;
+        border: 0;
         border-radius: 0;
     }
-    .ajax-pagination-form .ajax-pagination-btn:hover, .ajax-pagination-form .ajax-pagination-btn:focus {
+    .ajax-pagination-form .ajax-pagination-btn:hover,
+    .ajax-pagination-form .ajax-pagination-btn:focus {
         color: var(--fg)!important;
         background: var(--blue)!important;
-        border:0;
+        border: 0;
         border-radius: 0;
     }
     .social-count {
         color: var(--fg)!important;
         background-color: var(--bidarBlue);
         background-image: none;
-        border-radius: 0!important; 
+        border-radius: 0!important;
         border: 0;
     }
-    .btn-primary, .btn-primary:focus {
+    .btn-primary,
+    .btn-primary:focus {
         color: var(--bgest)!important;
         background-color: var(--green)!important;
         background-image: none;
@@ -175,16 +183,17 @@
         border-radius: 0!important;
         border: 0;
     }
-    .btn:hover, .btn:focus{
+    .btn:hover,
+    .btn:focus {
         color: var(--fg);
         background-color: var(--bidarBlue);
-        background-image: none;        
+        background-image: none;
         border: 0;
     }
     .progress-bar,
     .project-column,
     .rounded-2,
-    .Popover-message.Popover-message--large.Box.box-shadow-large.Popover-message--top-left{
+    .Popover-message.Popover-message--large.Box.box-shadow-large.Popover-message--top-left {
         border-radius: 0!important;
     }
     .markdown-body h1,
@@ -192,7 +201,7 @@
     .border-bottom,
     .jump-to-suggestions-results-container .navigation-item,
     .dropdown-menu::after,
-    table.files tr.up-tree{
+    table.files tr.up-tree {
         border-bottom: 1px solid var(--bger)!important;
     }
     .markdown-body hr,
@@ -206,7 +215,8 @@
         border-bottom-color: var(--blue);
         border-radius: 0;
     }
-    .dropdown-menu.dropdown-menu-sw.mt-n2, .dropdown-menu {
+    .dropdown-menu.dropdown-menu-sw.mt-n2,
+    .dropdown-menu {
         background-color: var(--bger);
         border-radius: 0;
     }
@@ -249,7 +259,9 @@
     .dropdown-item,
     .header-nav-current-user .user-profile-link,
     .breadcrumb strong.final-path,
-    .tabnav-tab:focus, .tabnav-tab:hover{
+    .tabnav-tab:focus,
+    .tabnav-tab:hover,
+    .repository-lang-stats ol.repository-lang-stats-numbers li .lang {
         color: var(--gray);
     }
     a.js-navigation-open,
@@ -259,7 +271,7 @@
     .pl-s,
     .pl-pds,
     .btn-link,
-    .numbers-summary li > a:hover{
+    .numbers-summary li > a:hover {
         color: var(--blue);
     }
     .pl-k {
@@ -272,13 +284,15 @@
     }
     .text-emphasized,
     .btn-octicon:hover,
-    .pl-c1, .pl-s .pl-v{
+    .pl-c1,
+    .pl-s .pl-v {
         color: var(--bidarBlue);
     }
     .pl-ent {
         color: var(--green);
     }
-    .pl-e, .pl-en {
+    .pl-e,
+    .pl-en {
         color: var(--purple);
     }
     .btn-octicon-danger:hover {
