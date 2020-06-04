@@ -1,0 +1,290 @@
+/* ==UserStyle==
+@name           GitHub Zi-Dark
+@namespace      github.com/openstyles/stylus
+@version        20.6.1
+@description    A new userstyle
+@author         null2264
+==/UserStyle== */
+@-moz-document domain("github.com") {
+
+    /* colors */
+    :root {
+        --bg: #2f3640;
+        --bger: #434758;
+        --bgest: #2A3039;
+        --fg: #f5f6fa;
+        --gray: #7f8fa6;
+        --blue: #37b0ff;
+        --bidarBlue: #019be1;
+        --red: #e84118;
+        --green: #44BD32;
+        --purple: #895bdd;
+    }
+
+    .width-full.text-left.btn-link.f6.muted-link.mt-2.border-md-0.border-top.py-md-0.py-3.px-md-0.px-2 {
+        padding-top: 16px!important;
+    }
+    [fill="#ebedf0"],
+    [style="background-color: #ebedf0"] {
+        fill: var(--bgest);
+        background-color: var(--bgest)!important;
+    }
+
+    .Header,
+    .form-control,
+    .form-select,
+    .project-header,
+    .cm-s-github-light.CodeMirror{
+        background: var(--bg)!important;
+        color: var(--fg)!important;
+    }
+    pre,
+    .Box-header.Box-header--blue.position-relative,
+    .AvatarStack-body .avatar,
+    .commit-tease .AvatarStack-body,.blob-num,
+    .cm-s-github-light .CodeMirror-linenumber{
+        background: var(--bger)!important;
+    }
+    .Header-link,
+    .commit-author,
+    .text-gray-dark,
+    .reponav-item,
+    .reponav-item .octicon,
+    .UnderlineNav-item,
+    .pinned-item-name,
+    .link-gray-dark,
+    .pl-c,
+    .blob-code-inner,
+    .blob-num
+    .cm-s-github-light .CodeMirror-linenumber,
+    .CodeMirror pre,
+    .cm-s-github-light.CodeMirror{
+        color: var(--fg)!important;
+    }
+
+    .application-main,
+    .pagehead.repohead,
+    .logged-in,
+    .js-user-status-container.user-status-compact.rounded-1.px-2.py-1.mt-2.border {
+        background: var(--bg)!important;
+        color: var(--fg);
+        border: 0;
+    }
+    .Popover-message::after {
+        border: 0;
+    }
+    .bg-white {
+        background: var(--bg)!important;
+    }
+    .reponav-item.selected,
+    .UnderlineNav-item.selected,
+    .UnderlineNav-item[aria-current]:not([aria-current="false"]),
+    .UnderlineNav-item[role="tab"][aria-selected="true"],
+    .tabnav-tab.selected, .tabnav-tab[aria-current]:not([aria-current="false"]), .tabnav-tab[aria-selected="true"],
+    .CodeMirror pre{
+        background: var(--bgest)!important;
+        color: var(--fg);
+        border-width: 0 0 4px 0;
+        border-color: transparent transparent var(--blue) transparent;
+        border-radius: 0;
+    }
+    table.files td.icon .octicon-file-directory,
+    .octicon.octicon-file,
+    table.files td.icon {
+        color: var(--bidarBlue)!important;
+    }
+    .pagehead.repohead {
+        border-bottom: 1px solid var(--blue)!important;
+    }
+    .jump-to-suggestions-results-container .navigation-focus .jump-to-suggestions-path,
+    .jump-to-suggestions-results-container [aria-selected="true"] .jump-to-suggestions-path,
+    .dropdown-item:focus,
+    .dropdown-item:hover {
+        background: var(--bidarBlue);
+    }
+
+    .Box,
+    .Box-header,
+    .Box-body,
+    .overall-summary,
+    table.files tr td,
+    table.files tr.navigation-focus td,
+    table.files tr[aria-selected="true"] td,
+    .user-profile-nav,
+    .user-profile-sticky-bar::after,
+    .bg-gray,
+    .border,
+    .avatar-before-user-status,
+    .file-header, .file{
+        background: var(--bgest)!important;
+        border: 0px!important;
+        border-radius: 0;
+    }
+    .border-top, .file-navigation .get-repo-btn {
+        border-top: 1px solid var(--bger)!important;
+    }
+    .dropdown-divider {
+        border-top: 1px solid var(--bg)!important;
+    }
+    .btn .octicon {
+        vertical-align: middle;
+    }
+    .btn,
+    .btn.disabled, .btn:disabled, .btn[aria-disabled="true"]{
+        color: var(--fg)!important;
+        background-color: var(--bgest);
+        background-image: none;
+        border-radius: 0!important;
+        border: 0;
+    }
+    .ajax-pagination-form .ajax-pagination-btn {
+        color: var(--fg)!important;
+        background: var(--bg)!important;
+        border:0;
+        border-radius: 0;
+    }
+    .ajax-pagination-form .ajax-pagination-btn:hover, .ajax-pagination-form .ajax-pagination-btn:focus {
+        color: var(--fg)!important;
+        background: var(--blue)!important;
+        border:0;
+        border-radius: 0;
+    }
+    .social-count {
+        color: var(--fg)!important;
+        background-color: var(--gray);
+        background-image: none;
+        border-radius: 0!important; 
+        border: 0;
+    }
+    .btn-primary {
+        color: var(--bgest)!important;
+        background-color: var(--green);
+        background-image: none;
+        border-radius: 0!important;
+        border: 0;
+    }
+    .btn-primary:hover, .btn-primary:focus {
+        color: var(--fg)!important;
+        background-color: var(--green);
+        background-image: none;
+        border-radius: 0!important;
+        border: 0;
+    }
+    .btn:hover, .btn:focus{
+        color: var(--fg);
+        background-color: var(--bidarBlue);
+        background-image: none;        
+        border: 0;
+    }
+    .progress-bar,
+    .project-column,
+    .rounded-2,
+    .Popover-message.Popover-message--large.Box.box-shadow-large.Popover-message--top-left{
+        border-radius: 0!important;
+    }
+    .markdown-body h1,
+    .markdown-body h2,
+    .border-bottom,
+    .jump-to-suggestions-results-container .navigation-item,
+    .dropdown-menu::after,
+    table.files tr.up-tree{
+        border-bottom: 1px solid var(--bger)!important;
+    }
+    .markdown-body hr,
+    .pinned-item-checkbox:checked + .pinned-item-name {
+        background-color: var(--bger);
+    }
+    .reponav-item:focus,
+    .reponav-item:hover,
+    .UnderlineNav-item:hover {
+        background-color: var(--bger);
+        border-bottom-color: var(--blue);
+        border-radius: 0;
+    }
+    .dropdown-menu.dropdown-menu-sw.mt-n2, .dropdown-menu {
+        background-color: var(--bger);
+        border-radius: 0;
+    }
+    .repository-lang-stats-graph,
+    .form-control,
+    .form-select,
+    .js-user-status-container.user-status-compact.rounded-1.px-2.py-1.mt-2.border {
+        border: 0!important;
+        border-radius: 0!important;
+        box-shadow: 0px 0px;
+    }
+    .form-control.focus,
+    .form-control:focus,
+    .form-select.focus,
+    .form-select:focus {
+        box-shadow: inset 0 1px 2px var(--bg), 0 0 0 .2em var(--bidarBlue);
+    }
+    .repository-lang-stats-graph .language-color:last-child {
+        border-bottom-right-radius: 0;
+    }
+    .repository-lang-stats-graph .language-color:first-child {
+        border-bottom-left-radius: 0;
+    }
+    .commit-tease div .message,
+    table.files td.message,
+    .link-gray,
+    .reponav-item .Counter,
+    .vcard-username,
+    .pinned-item-desc.text-gray,
+    .text-gray,
+    .btn-link.muted-link,
+    .muted-link,
+    .news div.message,
+    .news li blockquote,
+    .text-gray-light,
+    .pl-smi,
+    .commit-tease div span {
+        color: var(--gray)!important;
+    }
+    .dropdown-item,
+    .header-nav-current-user .user-profile-link,
+    .breadcrumb strong.final-path,
+    .tabnav-tab:focus, .tabnav-tab:hover{
+        color: var(--gray);
+    }
+    a.js-navigation-open,
+    .markdown-body a[href],
+    .repo,
+    a[href],
+    .pl-s,
+    .pl-pds,
+    .btn-link,
+    .numbers-summary li > a:hover{
+        color: var(--blue);
+    }
+    .pl-k {
+        color: var(--red)!important
+    }
+    .muted-link:hover,
+    .link-gray-dark:hover,
+    .link-gray:hover {
+        color: var(--blue)!important;
+    }
+    .text-emphasized,
+    .btn-octicon:hover,
+    .pl-c1, .pl-s .pl-v{
+        color: var(--bidarBlue);
+    }
+    .pl-ent {
+        color: var(--green);
+    }
+    .pl-e, .pl-en {
+        color: var(--purple);
+    }
+    .btn-octicon-danger:hover {
+        color: var(--red);
+    }
+    .branch-name {
+        background: var(--bidarBlue);
+        color: var(--fg)!important;
+    }
+    .team-left-column.border-bottom,
+    .team-left-column.border-right {
+        border: 0!important;
+    }
+}
