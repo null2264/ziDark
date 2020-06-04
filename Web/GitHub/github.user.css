@@ -5,7 +5,7 @@
 @homepageURL  https://github.com/null2264/Zi-Dark/tree/master/Web/GitHub
 @supportURL   https://github.com/null2264/Zi-Dark/issues
 @updateURL    https://raw.githubusercontent.com/null2264/Zi-Dark/master/Web/GitHub/github.user.css
-@version      20.6.3
+@version      20.6.4
 @author       null2264 <palembani@outlook.com> (https://github.com/null2264)
 @license      GPL-3.0
 @preprocessor stylus
@@ -48,7 +48,8 @@
     .AvatarStack-body .avatar,
     .commit-tease .AvatarStack-body,
     .blob-num,
-    .cm-s-github-light .CodeMirror-linenumber {
+    .cm-s-github-light .CodeMirror-linenumber,
+    .cm-s-github-light .CodeMirror-gutters {
         background: var(--bger)!important;
     }
     .Header-link,
@@ -123,7 +124,9 @@
     .border,
     .avatar-before-user-status,
     .file-header,
-    .file {
+    .file,
+    .cm-s-github-light .CodeMirror-lines,
+    .CodeMirror-scroll {
         background: var(--bgest)!important;
         border: 0px!important;
         border-radius: 0;
@@ -260,8 +263,7 @@
     .header-nav-current-user .user-profile-link,
     .breadcrumb strong.final-path,
     .tabnav-tab:focus,
-    .tabnav-tab:hover,
-    .repository-lang-stats ol.repository-lang-stats-numbers li .lang {
+    .tabnav-tab:hover {
         color: var(--gray);
     }
     a.js-navigation-open,
@@ -285,7 +287,8 @@
     .text-emphasized,
     .btn-octicon:hover,
     .pl-c1,
-    .pl-s .pl-v {
+    .pl-s .pl-v,
+    .cm-string.cm-url {
         color: var(--bidarBlue);
     }
     .pl-ent {
