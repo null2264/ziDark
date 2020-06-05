@@ -97,7 +97,10 @@
     .blob-expanded + tr:not(.blob-expanded) .blob-code, .blob-expanded + tr:not(.blob-expanded) .blob-num, .blob-expanded .blob-num-hunk, tr:not(.blob-expanded) + .blob-expanded .blob-code, tr:not(.blob-expanded) + .blob-expanded .blob-num,
     .line-comments.js-line-comments.js-quote-selection-container,
     .timeline-comment-wrapper,
-    .border-0.border-md.timeline-comment{
+    .border-0.border-md.timeline-comment,
+    .commit-form,
+    .commit-form::before,
+    .commit-form::after{
         border: 0!important;
     }
     .bg-white {
@@ -151,7 +154,8 @@
     .cm-s-github-light .CodeMirror-lines,
     .CodeMirror-scroll,
     .full-commit,
-    .thread-subscription-status{
+    .thread-subscription-status
+    .commit-form{
         background: var(--bgest)!important;
         border: 0px!important;
         border-radius: 0;
@@ -243,7 +247,9 @@
     .previewable-comment-form .comment-form-head.tabnav,
     .drag-and-drop,
     .rounded-1,
-    .thread-subscription-status{
+    .thread-subscription-status,
+    .commit-form,
+    .commit-form::before{
         border-radius: 0!important;
     }
     .markdown-body h1,
