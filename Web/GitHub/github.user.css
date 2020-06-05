@@ -5,7 +5,7 @@
 @homepageURL  https://github.com/null2264/Zi-Dark/tree/master/Web/GitHub
 @supportURL   https://github.com/null2264/Zi-Dark/issues
 @updateURL    https://raw.githubusercontent.com/null2264/Zi-Dark/master/Web/GitHub/github.user.css
-@version      20.6.8
+@version      20.6.7
 @author       null2264 <palembani@outlook.com> (https://github.com/null2264)
 @license      GPL-3.0
 @preprocessor stylus
@@ -48,8 +48,13 @@
     .AvatarStack-body .avatar,
     .commit-tease .AvatarStack-body,
     .blob-num,
+    .blob-code-hunk,
     .cm-s-github-light .CodeMirror-linenumber,
-    .cm-s-github-light .CodeMirror-gutters {
+    .cm-s-github-light .CodeMirror-gutters,
+    .full-commit .commit-meta,
+    .page-responsive .previewable-comment-form .comment-form-head.tabnav,
+    .drag-and-drop,
+    .bg-gray-light{
         background: var(--bger)!important;
     }
     .Header-link,
@@ -66,7 +71,11 @@
     .cm-s-github-light .CodeMirror-linenumber,
     .CodeMirror pre,
     .cm-s-github-light.CodeMirror,
-    .blob-num{
+    .blob-num
+    .js-expand.directional-expander.single-expander .octicon,
+    .add-line-comment,
+    .btn-link.tabnav-tab,
+    .drag-and-drop{
         color: var(--fg)!important;
     }
 
@@ -79,8 +88,17 @@
         color: var(--fg);
         border: 0;
     }
-    .Popover-message::after {
-        border: 0;
+    .Popover-message::after,
+    .blob-expanded + tr:not(.blob-expanded) .blob-code,
+    .blob-expanded + tr:not(.blob-expanded) .blob-num,
+    .inline-comment-form,
+    .comment-form-head.tabnav,
+    .drag-and-drop,
+    .blob-expanded + tr:not(.blob-expanded) .blob-code, .blob-expanded + tr:not(.blob-expanded) .blob-num, .blob-expanded .blob-num-hunk, tr:not(.blob-expanded) + .blob-expanded .blob-code, tr:not(.blob-expanded) + .blob-expanded .blob-num,
+    .line-comments.js-line-comments.js-quote-selection-container,
+    .timeline-comment-wrapper,
+    .border-0.border-md.timeline-comment{
+        border: 0!important;
     }
     .bg-white {
         background: var(--bg)!important;
@@ -92,7 +110,9 @@
     .tabnav-tab.selected,
     .tabnav-tab[aria-current]:not([aria-current="false"]),
     .tabnav-tab[aria-selected="true"],
-    .CodeMirror pre {
+    .CodeMirror pre,
+    .blob-expanded .blob-code,
+    .timeline-comment{
         background: var(--bgest)!important;
         color: var(--fg);
         border-width: 0 0 4px 0;
@@ -129,7 +149,9 @@
     .file-header,
     .file,
     .cm-s-github-light .CodeMirror-lines,
-    .CodeMirror-scroll {
+    .CodeMirror-scroll,
+    .full-commit,
+    .thread-subscription-status{
         background: var(--bgest)!important;
         border: 0px!important;
         border-radius: 0;
@@ -144,10 +166,18 @@
     .btn .octicon {
         vertical-align: middle;
     }
+    .commit-sha {
+        color: var(--fg)!important;
+        background-color: var(--gray);
+        background-image: none;
+        border-radius: 0!important;
+        border: 0;
+    }
     .btn,
     .btn.disabled,
     .btn:disabled,
-    .btn[aria-disabled="true"] {
+    .btn[aria-disabled="true"],
+    .signed-commit-badge{
         color: var(--fg)!important;
         background-color: var(--bgest);
         background-image: none;
@@ -175,14 +205,15 @@
         border: 0;
     }
     .btn-primary,
-    .btn-primary:focus {
+    .btn-primary:focus,
+    .signed-commit-badge.verified{
         color: var(--bgest)!important;
         background-color: var(--green)!important;
         background-image: none;
         border-radius: 0!important;
         border: 0;
     }
-    .btn-primary:hover {
+    .btn-primary:hover{
         color: var(--fg)!important;
         background-color: var(--bidarBlue)!important;
         background-image: none;
@@ -190,16 +221,29 @@
         border: 0;
     }
     .btn:hover,
-    .btn:focus {
+    .btn:focus,
+    .btn.selected{
         color: var(--fg);
         background-color: var(--bidarBlue);
         background-image: none;
         border: 0;
     }
+    .btn.selected:hover{
+        color: var(--fg);
+        background-color: var(--bger);
+        background-image: none;
+        border: 0;        
+    }
     .progress-bar,
     .project-column,
     .rounded-2,
-    .Popover-message.Popover-message--large.Box.box-shadow-large.Popover-message--top-left {
+    .Popover-message.Popover-message--large.Box.box-shadow-large.Popover-message--top-left,
+    .full-commit .commit-meta,
+    .inline-comment-form,
+    .previewable-comment-form .comment-form-head.tabnav,
+    .drag-and-drop,
+    .rounded-1,
+    .thread-subscription-status{
         border-radius: 0!important;
     }
     .markdown-body h1,
@@ -267,7 +311,11 @@
     .breadcrumb strong.final-path,
     .tabnav-tab:focus,
     .tabnav-tab:hover,
-    .repository-lang-stats ol.repository-lang-stats-numbers li .lang{
+    .repository-lang-stats ol.repository-lang-stats-numbers li .lang,
+    .full-commit .branches-list li a,
+    .full-commit .sha-block,
+    .toolbar-item,
+    .btn-link:disabled, .btn-link:disabled:hover, .btn-link[aria-disabled="true"], .btn-link[aria-disabled="true"]:hover{
         color: var(--gray);
     }
     a.js-navigation-open,
@@ -277,11 +325,18 @@
     .pl-s,
     .pl-pds,
     .btn-link,
-    .numbers-summary li > a:hover {
+    .numbers-summary li > a:hover,
+    .full-commit .sha-block > .sha{
         color: var(--blue);
+    }
+    .add-line-comment {
+        background: var(--blue);
     }
     .pl-k {
         color: var(--red)!important
+    }
+    .blob-code-deletion {
+        background: var(--red);
     }
     .muted-link:hover,
     .link-gray-dark:hover,
@@ -292,11 +347,17 @@
     .btn-octicon:hover,
     .pl-c1,
     .pl-s .pl-v,
-    .cm-string.cm-url {
+    .cm-string.cm-url,
+    .full-commit p.commit-title,
+    .toolbar-item .menu-target:focus, .toolbar-item:focus,
+    .toolbar-item .menu-target:hover, .toolbar-item:hover{
         color: var(--bidarBlue);
     }
     .pl-ent {
         color: var(--green);
+    }
+    .blob-code-addition {
+        background:var(--green);
     }
     .pl-e,
     .pl-en {
