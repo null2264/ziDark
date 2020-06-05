@@ -81,7 +81,8 @@
     .page-responsive .previewable-comment-form .comment-form-head.tabnav,
     .drag-and-drop,
     .bg-gray-light,
-    .branch-infobar{
+    .branch-infobar,
+    .new-discussion-timeline .composer .comment-form-head.tabnav{
         background: var(--bger)!important;
     }
     .Header-link,
@@ -103,7 +104,8 @@
     .add-line-comment,
     .btn-link.tabnav-tab,
     .drag-and-drop,
-    .branch-infobar{
+    .branch-infobar,
+    .discussion-sidebar-item{
         color: var(--fg)!important;
     }
 
@@ -131,7 +133,8 @@
     .commit-form::after{
         border: 0!important;
     }
-    .bg-white {
+    .bg-white,
+    .gh-header{
         background: var(--bg)!important;
     }
     .reponav-item.selected,
@@ -183,7 +186,8 @@
     .CodeMirror-scroll,
     .full-commit,
     .thread-subscription-status
-    .commit-form{
+    .commit-form,
+    .range-editor{
         background: var(--bgest)!important;
         border: 0px!important;
         border-radius: 0;
@@ -282,7 +286,8 @@
     .avatar,
     .filter-item,
     .RecentBranches,
-    .branch-infobar{
+    .branch-infobar,
+    .gh-header{
         border-radius: 0!important;
     }
     .markdown-body h1,
@@ -354,7 +359,11 @@
     .full-commit .branches-list li a,
     .full-commit .sha-block,
     .toolbar-item,
-    .btn-link:disabled, .btn-link:disabled:hover, .btn-link[aria-disabled="true"], .btn-link[aria-disabled="true"]:hover{
+    .btn-link:disabled, .btn-link:disabled:hover, .btn-link[aria-disabled="true"], .btn-link[aria-disabled="true"]:hover,
+    .gh-header-meta,
+    .range-editor-icon,
+    .discussion-sidebar-heading,
+    .TimelineItem-body{
         color: var(--gray);
     }
     a.js-navigation-open,
@@ -389,7 +398,8 @@
     .cm-string.cm-url,
     .full-commit p.commit-title,
     .toolbar-item .menu-target:focus, .toolbar-item:focus,
-    .toolbar-item .menu-target:hover, .toolbar-item:hover{
+    .toolbar-item .menu-target:hover, .toolbar-item:hover,
+    .discussion-sidebar-toggle:hover{
         color: var(--bidarBlue);
     }
     .pl-ent {
@@ -417,7 +427,8 @@
     .team-left-column.border-bottom,
     .team-left-column.border-right,
     .RecentBranches,
-    .branch-infobar{
+    .branch-infobar,
+    .timeline-comment--caret::after, .timeline-comment--caret::before{
         border: 0!important;
     }
 }
