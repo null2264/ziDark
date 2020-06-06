@@ -5,6 +5,6 @@ My theme collection of web/app that used my custom zi-dark colorscheme
 
 ## Downloads:
 
- [![Binadarma-Badge](https://img.shields.io/badge/install-binadarma-blue?style=flat-square&logo=github)](https://raw.githubusercontent.com/null2264/Zi-Dark/master/Web/Binadarma/bidar.user.css)
+ [![Binadarma-Badge](https://img.shields.io/badge/install-binadarma-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/null2264/Zi-Dark/master/Web/Binadarma/bidar.user.css)
 
-[![GitHub-Badge](https://img.shields.io/badge/install-github-blue?style=flat-square&logo=github)](https://raw.githubusercontent.com/null2264/Zi-Dark/master/Web/GitHub/github.user.css)
+[![GitHub-Badge](https://img.shields.io/badge/install-github-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/null2264/Zi-Dark/master/Web/GitHub/github.user.css)
