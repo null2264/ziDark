@@ -63,6 +63,12 @@
         fill: var(--bidarBlue);   
         background-color: var(--bidarBlue)!important;
     }
+    .graphs .area {
+        fill: var(--blue);
+    }
+    .contrib-person path {
+        fill: var(--yellow);
+    }
     
     .Header,
     .form-control,
@@ -207,7 +213,10 @@
     .Box-row--focus-gray.navigation-focus,
     .merge-status-item,
     .branch-action-body,
-    .commit.commits-list-item.table-list-item{
+    .commit.commits-list-item.table-list-item,
+    .menu,
+    .capped-card-content,
+    .tint-box{
         background: var(--bgest)!important;
         border: 0px!important;
         border-radius: 0;
@@ -236,7 +245,9 @@
     .btn[aria-disabled="true"],
     .signed-commit-badge,
     .subnav-item,
-    .timeline-comment-label{
+    .timeline-comment-label,
+    .menu-item.selected, .menu-item[aria-current]:not([aria-current="false"]), .menu-item[aria-selected="true"],
+    .menu-item{
         color: var(--fg)!important;
         background-color: var(--bgest);
         background-image: none;
@@ -288,7 +299,8 @@
         background-image: none;
         border: 0;
     }
-    .btn.selected:hover{
+    .btn.selected:hover,
+    .menu-item:hover{
         color: var(--fg);
         background-color: var(--bger);
         background-image: none;
@@ -398,7 +410,8 @@
     .Counter,
     .timeline-comment-header-text,
     .commit .commit-title, .commit .commit-title a,
-    .commit-group-title{
+    .commit-group-title,
+    .graph-filter .info{
         color: var(--gray);
     }
     a.js-navigation-open,
@@ -426,10 +439,11 @@
     .link-gray:hover {
         color: var(--blue)!important;
     }
-    .TimelineItem::before {
+    .TimelineItem::before,
+    .menu-item.selected::before, .menu-item[aria-current]:not([aria-current="false"])::before, .menu-item[aria-selected="true"]::before{
         background: var(--blue);
     }
-    .TimelineItem-badge {
+    .TimelineItem-badge{
         border: 2px solid var(--blue);
     }
     .text-emphasized,
