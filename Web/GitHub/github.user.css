@@ -5,7 +5,7 @@
 @homepageURL  https://github.com/null2264/Zi-Dark/tree/master/Web/GitHub
 @supportURL   https://github.com/null2264/Zi-Dark/issues
 @updateURL    https://raw.githubusercontent.com/null2264/Zi-Dark/master/Web/GitHub/github.user.css
-@version      20.6.7
+@version      20.6.8
 @author       null2264 <palembani@outlook.com> (https://github.com/null2264)
 @license      GPL-3.0
 @preprocessor stylus
@@ -216,7 +216,8 @@
     .commit.commits-list-item.table-list-item,
     .menu,
     .capped-card-content,
-    .tint-box{
+    .tint-box,
+    .ellipsis-expander, .hidden-text-expander a{
         background: var(--bgest)!important;
         border: 0px!important;
         border-radius: 0;
@@ -389,7 +390,8 @@
     .news li blockquote,
     .text-gray-light,
     .pl-smi,
-    .commit-tease div span {
+    .commit-tease div span,
+    .commit-desc pre{
         color: var(--gray)!important;
     }
     .dropdown-item,
@@ -411,7 +413,8 @@
     .timeline-comment-header-text,
     .commit .commit-title, .commit .commit-title a,
     .commit-group-title,
-    .graph-filter .info{
+    .graph-filter .info,
+    .ellipsis-expander, .hidden-text-expander a{
         color: var(--gray);
     }
     a.js-navigation-open,
