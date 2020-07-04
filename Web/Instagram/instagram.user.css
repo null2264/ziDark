@@ -1,0 +1,189 @@
+/* ==UserStyle==
+@name         Instagram Zi-Dark
+@description  Dark Mode for Instagram.
+@namespace    github.com/null2264/Zi-Dark
+@homepageURL  https://github.com/null2264/Zi-Dark/tree/master/Web/Instagram
+@supportURL   https://github.com/null2264/Zi-Dark/issues
+@updateURL    https://raw.githubusercontent.com/null2264/Zi-Dark/master/Web/Instagram/instagram.user.css
+@version      20.7.0
+@author       null2264 <palembani@outlook.com> (https://github.com/null2264)
+@license      GPL-3.0
+@preprocessor stylus
+==/UserStyle== */
+
+@-moz-document domain("instagram.com") {
+    /* colors */
+    :root {
+        --bg: #2f3640;
+        --bger: #434758;
+        --bgest: #2A3039;
+        --fg: #f5f6fa;
+        --gray: #7f8fa6;
+        --blue: #37b0ff;
+        --bidarBlue: #019be1;
+        --red: #e84118;
+        --green: #44BD32;
+        --purple: #895bdd;
+        --yellow: #ffdf35;
+        --f52: var(--gray);
+    }
+    main,
+    .eebAO,
+    .yWX7d._8A5w5, a.yWX7d._8A5w5, a.yWX7d._8A5w5:visited,
+    ._8-yf5,
+    .sH9wk,
+    .Ypffh::placeholder, .Ypffh:focus::placeholder,
+    .Ypffh,
+    a.r8ZrO,
+    .gmFkV, .gmFkV:visited, .gmFkV:active, .gmFkV:focus, .gmFkV:hover,
+    .KV-D4,
+    .HoLwm,
+    .x3qfX,
+    textarea::placeholder,
+    textarea,
+    a.k8Vux, a.k8Vux:visited,
+    .m7ETg,
+    .g47SY,
+    .rhpdm,
+    .TqC_a,
+    .sqdOP.L3NKy._4pI4F._8A5w5,
+    .m82CD{
+        color: var(--fg)!important;
+    }
+    span a[href], span a:visited[href],
+    .r8ZrO span, .r8ZrO span:visited,
+    ._0PwGv,
+    .f5Yes,
+    .vcOH2,
+    .-nal3,
+    .-vDIg span,
+    .PJXu4,
+    .DINPA{
+        color: var(--gray)!important;
+    }
+    a.FPmhX.MBL3Z,
+    .sqdOP.yWX7d.y3zKF,
+    .yLUwa,
+    .l93RR{
+        color: var(--bidarBlue)!important;
+    }
+    .-Cab_ {
+        color: var(--red)!important;
+    }
+    ._4l6NB,
+    ._2dbep{
+        background: 0;
+    }
+    ._19dxx .Yi5aA {
+        background-color: var(--fg)!important;
+    }
+    main,
+    body,
+    .aOOlW,
+    .t30g8,
+    ._3PsV3.CMoMH._8_yLp,
+    .CMoMH._8_yLp,
+    .Igw0E.rBNOH.eGOV_.ybXk5._4EzTm.XfCBB.HVWg4{
+        background-color: var(--bg)!important;
+    }
+    main section div div.zGtbP.IPQK5.VideM,
+    .eo2As,
+    .rQDP3,
+    .eLAPa,
+    ._8UZ6e,
+    .tHaIX.Igw0E.IwRSH.eGOV_._4EzTm.HVWg4,
+    .PUHRj,
+    .pbgfb.Di7vw,
+    .LWmhU._0aCwM,
+    .QOqBd.Igw0E.IwRSH.eGOV_._4EzTm,
+    .-qQT3.rOtsg:hover,
+    .x3qfX,
+    .Igw0E.IwRSH.hLiUi.vwCYk,
+    .X3a-9,
+    .DPiy6.Igw0E.IwRSH.eGOV_.vwCYk,
+    ._41V_T.QOqBd.Igw0E.rBNOH.eGOV_._4EzTm,
+    .M-jxE,
+    div div div .Igw0E.rBNOH.eGOV_.ybXk5._4EzTm.XfCBB.HVWg4{
+        background-color: var(--bger)!important;
+    }
+    article header,
+    ._lz6s.aUCRo.Hz2lF,
+    ._lz6s.Hz2lF,
+    .sH9wk._JgwE,
+    .S-mcP,
+    .Igw0E.IwRSH.eGOV_._4EzTm.i0EQd,
+    .N9abW,
+    .DPiy6.Igw0E.IwRSH.eGOV_._4EzTm,
+    .Igw0E.IwRSH.eGOV_._4EzTm.L-sTb.HcJZg,
+    ._8Rna9._3Laht,
+    .eiUFA{
+        background-color: var(--bgest)!important;
+    }
+    .sqdOP.L3NKy._4pI4F._8A5w5:hover{
+        background-color: var(--blue)!important;
+    }
+    ._6FEQj.CMoMH.RQUXn._8_yLp,
+    ._19dxx .XCodT,
+    .emXTk,
+    .sqdOP.L3NKy._4pI4F._8A5w5{
+        background-color: var(--bidarBlue)!important;
+    }
+    main section div div.zGtbP.IPQK5.VideM,
+    ._3MPWk, ._8Rm4L, .zMhqu, .KQA-S, ._1MzIy,
+    .ltEKP .QBXjJ,
+    .mt3GC:only-child .aOOlW:first-child,
+    ._1XyCr,
+    .aOOlW:last-of-type,
+    ._01UL2,
+    .pbgfb.Di7vw,
+    .x3qfX,
+    .pV7Qt._6Rvw2.Igw0E.IwRSH.YBx95.ybXk5._4EzTm.i0EQd,
+    .X3a-9,
+    .sqdOP.L3NKy._4pI4F._8A5w5{
+        border-radius: 0!important;
+    }
+    main section div div.zGtbP.IPQK5.VideM,
+    ._3MPWk, ._8Rm4L, .zMhqu, .KQA-S, ._1MzIy,
+    arcticle header,
+    ._lz6s.aUCRo.Hz2lF,
+    ._lz6s.Hz2lF,
+    .sH9wk,
+    .ltEKP .QBXjJ,
+    .aOOlW,
+    .pbgfb.Di7vw,
+    .x3qfX,
+    .pV7Qt._6Rvw2.Igw0E.IwRSH.YBx95.ybXk5._4EzTm.i0EQd,
+    .S-mcP,
+    .emXTk,
+    ._6FEQj.CMoMH.RQUXn._8_yLp,
+    .X3a-9,
+    ._3PsV3.CMoMH._8_yLp,
+    .M-jxE,
+    .sqdOP.L3NKy._4pI4F._8A5w5,
+    .oNO81,
+    .CMoMH._8_yLp,
+    .Igw0E.IwRSH.eGOV_._4EzTm div{
+        border: 0;
+    }
+    .UE9AK,
+    .emXTk::before,
+    .snXeX{
+        border-color: var(--bg)!important;
+    }
+    .fx7hk {
+        border-color: var(--bger)!important;
+    }
+    .T-jvg {
+        border-color: var(--blue)!important;
+    }
+    .glyphsSpriteChevron_circle_shadow_right {
+        filter: brightness(.5)
+    }
+    .FFVAD {
+        filter: brightness(.8)
+    }
+    .s4Iyt,
+    ._8-yf5{
+        filter: brightness(10)
+    }
+}
