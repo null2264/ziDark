@@ -5,1145 +5,1163 @@
 @homepageURL  https://github.com/null2264/Zi-Dark/tree/master/Web/Binadarma
 @supportURL   https://github.com/null2264/Zi-Dark/issues
 @updateURL    https://raw.githubusercontent.com/null2264/Zi-Dark/master/Web/Binadarma/bidar.user.css
-@version      20.6.4
+@version      21.1.1
 @author       null2264 <palembani@outlook.com> (https://github.com/null2264)
 @license      GPL-3.0
 @preprocessor stylus
 ==/UserStyle== */
 @-moz-document url-prefix("https://elearning.binadarma.ac.id/") {
-/* colors */
-:root {
-    --bg: #2f3640;
-    --bger: #434758;
-    --bgest: #2A3039;
-    --fg: #f5f6fa;
-    --gray: #7f8fa6;
-    --blue: #37b0ff;
-    --bidarBlue: #019be1;
-    --red: #e84118;
-}
+    /* colors */
+    :root {
+        --bg: #2f3640;
+        --bger: #434758;
+        --bgest: #2A3039;
+        --fg: #f5f6fa;
+        --gray: #7f8fa6;
+        --blue: #37b0ff;
+        --bidarBlue: #019be1;
+        --red: #e84118;
+    }
 
-/* New Codes - 16.05.2020 */
-.hover-tooltip-container .hover-tooltip,
- .modal-footer{
-    background-color: var(--bgest);
-}
-.content-item-container.notification .content-item-body .notification-message {
-    line-height: 20px;
-    width: calc(100% - 36px);
-    padding-left: 8px;
-}
-.block-myoverview.block-cards .dashboard-card-deck .ml-auto.dropdown {
-    background: var(--bger);
-}
-.block-myoverview.block-cards .dashboard-card-deck .ml-auto.dropdown .coursemenubtn img.icon {
-    position: absolute;
-    top: 8.5px;
-    right: 8px;
-    filter: brightness(100);
-}
-.dropdown-item.menu-action > .icon, .moodle-actionmenu .dropdown-item img.icon, img.icon, .block_navigation .block_tree .tree_item.branch {
-    filter: brightness(100);
-}
-[data-toggle="dropdown"] + .dropdown-menu > .dropdown-item {
-    display: block;
-    white-space: nowrap;
-    transition: all 0.5s ease;
-}
-.moodle-actionmenu .dropdown-item:hover {
-    background: var(--blue)!important;
-    border-radius: 10px;
-    padding-left: 6px;
-}
+    /* New Codes - 16.05.2020 */
+    .hover-tooltip-container .hover-tooltip,
+    .modal-footer code,
+    pre {
+        background-color: var(--bgest);
+    }
+    .content-item-container.notification .content-item-body .notification-message {
+        line-height: 20px;
+        width: calc(100% - 36px);
+        padding-left: 8px;
+    }
+    .block-myoverview.block-cards .dashboard-card-deck .ml-auto.dropdown {
+        background: var(--bger);
+    }
+    .block-myoverview.block-cards .dashboard-card-deck .ml-auto.dropdown .coursemenubtn img.icon {
+        position: absolute;
+        top: 8.5px;
+        right: 8px;
+        filter: brightness(100);
+    }
+    .dropdown-item.menu-action > .icon,
+    .moodle-actionmenu .dropdown-item img.icon,
+    img.icon,
+    .block_navigation .block_tree .tree_item.branch {
+        filter: brightness(100);
+    }
+    [data-toggle="dropdown"] + .dropdown-menu > .dropdown-item {
+        display: block;
+        white-space: nowrap;
+        transition: all 0.5s ease;
+    }
+    .moodle-actionmenu .dropdown-item:hover {
+        background: var(--blue)!important;
+        border-radius: 10px;
+        padding-left: 6px;
+    }
 
-.popover-region-toggle::before, .popover-region-toggle::after {
-    border-bottom: 0px;
-    left: -2px;
-    right: 14px;
-}
+    .popover-region-toggle::before,
+    .popover-region-toggle::after {
+        border-bottom: 0px;
+        left: -2px;
+        right: 14px;
+    }
 
-.message-app .container-fluid .row-fluid.h-100, .pagination ul > li > a:hover,
-.pagination ul > li > a:active, .pagination ul > li > a:focus{
-    background: var(--bgest)!important;
-}
-.dropdown-menu > li:hover, .dropdown-menu > li {
-    background: var(--bger) !important;
-}
-.message-app .container-fluid .btn.btn-link {
-    background: var(--bidarBlue)!important;
-    padding-bottom: 0px!important;
-}
-.message-app .container-fluid .btn.btn-link:hover {
-    background: var(--blue)!important;
-}
+    .message-app .container-fluid .row-fluid.h-100,
+    .pagination ul > li > a:hover,
+    .pagination ul > li > a:active,
+    .pagination ul > li > a:focus {
+        background: var(--bgest)!important;
+    }
+    .dropdown-menu > li:hover,
+    .dropdown-menu > li {
+        background: var(--bger) !important;
+    }
+    .message-app .container-fluid .btn.btn-link {
+        background: var(--bidarBlue)!important;
+        padding-bottom: 0px!important;
+    }
+    .message-app .container-fluid .btn.btn-link:hover {
+        background: var(--blue)!important;
+    }
 
-.pr-1,
-.px-1 {
-    padding-right: 10.4px!important
-}
-#site-news-forum > h2,
-.d-inline-block.mt-1.align-top {
-    margin-top: 0px!important;
-}
-.block .card-title::before {
-    background-color: var(--bidarBlue)!important;
-    padding: 6px 3px 5px 4px;
-}
+    .pr-1,
+    .px-1 {
+        padding-right: 10.4px!important
+    }
+    #site-news-forum > h2,
+    .d-inline-block.mt-1.align-top {
+        margin-top: 0px!important;
+    }
+    .block .card-title::before {
+        background-color: var(--bidarBlue)!important;
+        padding: 6px 3px 5px 4px;
+    }
 
-.completionprogress a.btn.btn-link {
-    margin-left: 6px;
-}
+    .completionprogress a.btn.btn-link {
+        margin-left: 6px;
+    }
 
-.path-user #message-user-button {
-    background: var(--bidarBlue);
-}
+    .path-user #message-user-button {
+        background: var(--bidarBlue);
+    }
 
-.userprofile .description {
-    margin-top: -1px;
-    margin-bottom: 0;
-    background-color: var(--bger);
-    padding: 8px 8px 1px 8px;
-    border-radius: 0 0 10px 10px;
-    border-top: 2px solid var(--bidarBlue);
-}
+    .userprofile .description {
+        margin-top: -1px;
+        margin-bottom: 0;
+        background-color: var(--bger);
+        padding: 8px 8px 1px 8px;
+        border-radius: 0 0 10px 10px;
+        border-top: 2px solid var(--bidarBlue);
+    }
 
-.block .card-title::before, #page-footer .footerlinks .socials .social_icons a.social, .content-item-container.notification .content-item-body .notification-image {
-    border-radius: 500px;
-}
-.content-item-container.notification .content-item-body .notification-image {
-    background: var(--gray);
-    width: 28px;
-    height: 28px;
-}
-.content-item-container.notification .content-item-body .notification-image img {
-    height: 64%;
-    margin-left: 5px;
-    margin-bottom: -1px;
-}
-#page-footer .socials .social_contact i {
-    font-size: 14px;
-    padding: 6px 7px 6px 7px;
-    background: var(--fg);
-    color: var(--bg);
-    border-radius: 500px;
-    margin-left: -15px;
-}
-.social_contact nobr {
-    background: var(--bgest);
-    border-radius: 8px;
-}
-[href="mailto:universitas@binadarma.ac.d"] {
-    padding-right: 10px!important;
-}
-[href="www.binadarma.ac.id"] {
-    padding-right: 18px!important;
-}
+    .block .card-title::before,
+    #page-footer .footerlinks .socials .social_icons a.social,
+    .content-item-container.notification .content-item-body .notification-image {
+        border-radius: 500px;
+    }
+    .content-item-container.notification .content-item-body .notification-image {
+        background: var(--gray);
+        width: 28px;
+        height: 28px;
+    }
+    .content-item-container.notification .content-item-body .notification-image img {
+        height: 64%;
+        margin-left: 5px;
+        margin-bottom: -1px;
+    }
+    #page-footer .socials .social_contact i {
+        font-size: 14px;
+        padding: 6px 7px 6px 7px;
+        background: var(--fg);
+        color: var(--bg);
+        border-radius: 500px;
+        margin-left: -15px;
+    }
+    .social_contact nobr {
+        background: var(--bgest);
+        border-radius: 8px;
+    }
+    [href="mailto:universitas@binadarma.ac.d"] {
+        padding-right: 10px!important;
+    }
+    [href="www.binadarma.ac.id"] {
+        padding-right: 18px!important;
+    }
 
-.social_contact_web > nobr {
-    margin: 4px;
-}
+    .social_contact_web > nobr {
+        margin: 4px;
+    }
 
-.forumpost {
-    border-radius: 8px;
-}
+    .forumpost {
+        border-radius: 8px;
+    }
 
-/* ----- Course Card */
-.card-img.dashboard-card-img, .mr-auto, .mx-auto, .path-user #page-header .card {
-    border-radius: 10px 10px 0 0;
-}
-.card-img.dashboard-card-img {
-    filter: brightness(40%);
-}
+    /* ----- Course Card */
+    .card-img.dashboard-card-img,
+    .mr-auto,
+    .mx-auto,
+    .path-user #page-header .card {
+        border-radius: 10px 10px 0 0;
+    }
+    .card-img.dashboard-card-img {
+        filter: brightness(40%);
+    }
 
-[data-control="previous"] > .page-link {
-    border-radius: 10px 0px 0px 10px !important;
-}
-[data-control="next"] > .page-link {
-    border-radius: 0px 10px 10px 0px !important;
-}
-.dashboard-card-deck .dashboard-card,
-.block,
-.block .card-title,
-.dropdown.mb-1.mr-auto,
-#groupingdropdown,
-.dropdown-menu,
-#sortingdropdown,
-#displaydropdown,
-#paging-control-limit-container-2 > .btn-group > .btn.btn-outline-secondary.dropdown-toggle,
-[data-region="view-selector"] > [aria-controls="menusortby"],
-[data-region="day-filter"] > [aria-controls="menudayfilter"],
-.custom-select.singleselect, 
-.node_category,
-button.btn,
-input[type="submit"].btn,
-[data-enhance="moodle-core-actionmenu"], 
-.path-user #message-user-button,
-.message-app .container-fluid .col-4.d-flex.flex-column,
-.message-app .container-fluid .row-fluid.h-100,
-#block-login input[type="text"],
-#block-login input[type="password"],
-#block-login #user,
-#block-login #pass,
-#submit,
-.hover-tooltip-container .hover-tooltip {
-    border-radius: 10px 10px!important;
-}
-.dropdown.mb-1.mr-auto .dropdown-menu {
-    left: 0px;
-}
-.dropdown-menu {
-    margin-top: 6px;
-    margin-left: 9px;
-}
-.dropdown.mb-1 .dropdown-menu {
-    left: -4px;
-}
-#menudayfilter,
-.btn-group > .dropdown-menu {
-    margin-left: 1px;
-}
-.dropdown.open > .dropdown-menu {
-    margin-left: 6px;
-}
-.dropdown-menu > .active > a {
-    background-color: var(--bidarBlue)!important;
-    color: white!important;
-    border-radius: 8px;
-}
-.dropdown-menu > li > a:hover {
-    background-color: var(--blue)!important;
-    border-radius: 8px;
-    padding-left: 12px;
-    transition: all 0.5s ease;
-}
-.dropdown-menu > li > a.dropdown-item.active {
-    background-color: var(--bidarBlue)!important;
-    border-radius: 8px;
-    padding-left: 12px;   
-}
-.card-title.d-inline {
-    padding-bottom: 10px!important;
-}
-/* ----- Calender */
-.d-inline-block .name {
-    margin: -16px 0px 0px 0px!important;
-    position: absolute;
-}
-.d-inline-block.mt-1.align-top .icon {
-    background: var(--bidarBlue);
-    padding: 4px;
-    border-radius: 100px;
-    margin: 0px 10px 0px 0px;
-}
+    [data-control="previous"] > .page-link {
+        border-radius: 10px 0px 0px 10px !important;
+    }
+    [data-control="next"] > .page-link {
+        border-radius: 0px 10px 10px 0px !important;
+    }
+    .dashboard-card-deck .dashboard-card,
+    .block,
+    .block .card-title,
+    .dropdown.mb-1.mr-auto,
+    #groupingdropdown,
+    .dropdown-menu,
+    #sortingdropdown,
+    #displaydropdown,
+    #paging-control-limit-container-2 > .btn-group > .btn.btn-outline-secondary.dropdown-toggle,
+    [data-region="view-selector"] > [aria-controls="menusortby"],
+    [data-region="day-filter"] > [aria-controls="menudayfilter"],
+    .custom-select.singleselect,
+    .node_category,
+    button.btn,
+    input[type="submit"].btn,
+    [data-enhance="moodle-core-actionmenu"],
+    .path-user #message-user-button,
+    .message-app .container-fluid .col-4.d-flex.flex-column,
+    .message-app .container-fluid .row-fluid.h-100,
+    #block-login input[type="text"],
+    #block-login input[type="password"],
+    #block-login #user,
+    #block-login #pass,
+    #submit,
+    .hover-tooltip-container .hover-tooltip {
+        border-radius: 10px 10px!important;
+    }
+    .dropdown.mb-1.mr-auto .dropdown-menu {
+        left: 0px;
+    }
+    .dropdown-menu {
+        margin-top: 6px;
+        margin-left: 9px;
+    }
+    .dropdown.mb-1 .dropdown-menu {
+        left: -4px;
+    }
+    #menudayfilter,
+    .btn-group > .dropdown-menu {
+        margin-left: 1px;
+    }
+    .dropdown.open > .dropdown-menu {
+        margin-left: 6px;
+    }
+    .dropdown-menu > .active > a {
+        background-color: var(--bidarBlue)!important;
+        color: white!important;
+        border-radius: 8px;
+    }
+    .dropdown-menu > li > a:hover {
+        background-color: var(--blue)!important;
+        border-radius: 8px;
+        padding-left: 12px;
+        transition: all 0.5s ease;
+    }
+    .dropdown-menu > li > a.dropdown-item.active {
+        background-color: var(--bidarBlue)!important;
+        border-radius: 8px;
+        padding-left: 12px;
+    }
+    .card-title.d-inline {
+        padding-bottom: 10px!important;
+    }
+    /* ----- Calender */
+    .d-inline-block .name {
+        margin: -16px 0px 0px 0px!important;
+        position: absolute;
+    }
+    .d-inline-block.mt-1.align-top .icon {
+        background: var(--bidarBlue);
+        padding: 4px;
+        border-radius: 100px;
+        margin: 0px 10px 0px 0px;
+    }
 
-/* ----- Activity Sections */
-.course-content ul.periods li.section .summary {
-    margin: 0px;
-    padding: 6px 0px 6px 45px;
-}
-.availabilityinfo.isrestricted .label.label-info {
-    background: var(--red);
-    border-radius: 8px;
-    padding: 4px 7px 4px 5px;
-}
-.activity img.iconlarge {
-    background: var(--bidarBlue);
-    padding: 4px;
-    border-radius: 100px;
-    margin: 1.5px 10px 0px 6px;
-}
-.activity .no-overflow {
-    padding-left: 10px;
-}
-.section li.activity,
-.section:hover li.activity:hover,
-.course-content ul.periods li.section .summary {
-    background-color: var(--bger);
-    border-radius: 8px;
-    margin-top: 10px;
-}
-.section .activity .actions {
-    background-color: transparent;
-}
-.activity .instancename {
-    padding-top: 8px;
-    position: absolute;
-}
-.availabilityinfo.isrestricted {
-    margin-bottom: 4px;
-}
+    /* ----- Activity Sections */
+    .course-content ul.periods li.section .summary {
+        margin: 0px;
+        padding: 6px 0px 6px 45px;
+    }
+    .availabilityinfo.isrestricted .label.label-info {
+        background: var(--red);
+        border-radius: 8px;
+        padding: 4px 7px 4px 5px;
+    }
+    .activity img.iconlarge {
+        background: var(--bidarBlue);
+        padding: 4px;
+        border-radius: 100px;
+        margin: 1.5px 10px 0px 6px;
+    }
+    .activity .no-overflow {
+        padding-left: 10px;
+    }
+    .section li.activity,
+    .section:hover li.activity:hover,
+    .course-content ul.periods li.section .summary {
+        background-color: var(--bger);
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+    .section .activity .actions {
+        background-color: transparent;
+    }
+    .activity .instancename {
+        padding-top: 8px;
+        position: absolute;
+    }
+    .availabilityinfo.isrestricted {
+        margin-bottom: 4px;
+    }
 
-/* ----------------------- */
-.pagelayout-report .hidden-blocks,
-.popover,
-.modal .modal-content{
-    background-color: var(--bg);
-}
+    /* ----------------------- */
+    .pagelayout-report .hidden-blocks,
+    .popover,
+    .modal .modal-content {
+        background-color: var(--bg);
+    }
 
-.d-flex.align-items-center.flex-wrap,
-.row-fluid.no-gutters,
-.activity .togglecompletion {
-    padding: 5px
-}
-.d-flex.paging-bar-container.mb-3 {
-    padding: 5px 5px 0px 5px
-}
-.row-fluid.no-gutters {
-    width: 98%;
-}
+    .d-flex.align-items-center.flex-wrap,
+    .row-fluid.no-gutters,
+    .activity .togglecompletion {
+        padding: 5px
+    }
+    .d-flex.paging-bar-container.mb-3 {
+        padding: 5px 5px 0px 5px
+    }
+    .row-fluid.no-gutters {
+        width: 98%;
+    }
 
-/* ----- header */
-#wrapper {
-    width: 100%;
-    max-width: 100%;
-    border-top: 4x solid var(--bg);
-}
-#page-header {
-    background: var(--bg);
-    border-radius: 2px;
-}
-.navbar,
-.card {
-    background: var(--bger);
-}
-.navbar-inner {
-    background: var(--bger);
-}
-.navbar .btn-navbar:hover,
-.navbar .btn-navbar:focus,
-.navbar .btn-navbar:active,
-.navbar .btn-navbar.active,
-.navbar .btn-navbar.disabled,
-.navbar .btn-navbar[disabled] {
-    background: var(--bger);
-}
-.navbar .btn-navbar {
-    background: var(--bg);
-}
-.navbar #search button[type="submit"] {
-    background: var(--bg) url(https://elearning.binadarma.ac.id/theme/image.php/lambda/theme/1580986309/bg/icon-search) no-repeat center center!important;
-    color: var(--fg);
-}
-.navbar #search button[type="submit"]:hover {
-    background: var(--bger) url(https://elearning.binadarma.ac.id/theme/image.php/lambda/theme/1580986309/bg/icon-search) no-repeat center center!important;
-    color: var(--fg);
-}
-.navbar #search input {
-    background: var(--bg);
-}
-.navbar #search:hover input#coursesearchbox {
-    background: var(--bg);
-}
-.navbar .brand {
-    background: var(--bgest);
-}
-.navbar .brand:hover {
-    background: var(--bgest);
-}
-.navbar .dropdown-menu {
-    border-bottom: 4px solid var(--bg);
-}
-.dropdown-menu > li > a {
-    color: var(--fg)!important;
-    background-color: var(--bger)!important;
-    border-radius: 8px;
-    transition: all 0.5s ease;
-}
-.navbar .nav > li > a:focus,
-.navbar .nav > li > a:hover,
-.navbar .nav > .active > a,
-.navbar .nav > .active > a:hover,
-.navbar .nav > .active > a:focus,
-.navbar .nav li.dropdown.open > .dropdown-toggle,
-.navbar .nav li.dropdown.active > .dropdown-toggle,
-.navbar .nav li.dropdown.open.active > .dropdown-toggle {
-    background: var(--bgest);
-}
-.navbar .dropdown-menu > li > a {
-    background-image: none;
-    background-color: var(--bg)!important;
-    color: var(--fg)!important;
-    border-bottom: transparent;
-    padding-left: 12px;
-}
-.navbar .dropdown-menu > li > a:hover {
-    background-image: none;
-    background-color: var(--bger)!important;
-    color: var(--fg)!important;
-    padding-left: 12px;
-}
-.moodle-actionmenu .dropdown-item .menu-action-text {
-    color: var(--fg);
-}
-.moodle-actionmenu .dropdown-divider .filler {
-    border: transparent;
-    background: transparent;
-}
-.moodle-actionmenu .dropdown-item:hover {
-    background: var(--bger);
-}
-.moodle-actionmenu .dropdown-item .menu-action-text:hover {}
-.caret {
-    border-top: 4px solid var(--fg);
-}
-#loggedin-user .usertext {
-    color: var(--fg);
-}
-/* body (base) */
-.mr-auto,
-.mx-auto,
-.path-user #page-header .card {
-    background-color: var(--bger);
-}
-.path-user #region-main .profile_tree,
-.path-user #region-main .profile_tree::before {
-    background: var(--bg) repeat-x scroll left top;
-}
-.userprofile .profile_tree section {
-    border: transparent;
-    background: var(--bger);
-}
-.profileblock .welcome_userpicture {
-    border-radius: 50%;
-}
-img.userpicture {
-    border-radius: 50%;
-}
-img.icon {
-    vertical-align: middle;
-    padding-bottom: 2px;
-}
-.path-user #region-main .page-context-header {
-    padding: 10px;
-    margin-bottom: -8px;
-}
-body {
-    background: none repeat scroll 0 0 var(--bg);
-    padding-top: 0;
-    color: var(--fg);
-}
-/* texts */
-.breadcrumb > li {
-    text-shadow: 0 1px 0 var(--gray);
-}
-.block ul.block_tree a,
-.breadcrumb a,
-.instancename,
-.block_book_toc li a,
-.block_site_main_menu li a,
-.navbottom .booknext,
-.navbottom .bookprev,
-.navbottom .bookexit {
-    color: var(--fg);
-}
-.breadcrumb {
-    color: var(--gray);
-}
-/* pages */
-#page {
-    background: var(--bg);
-}
-.blockstyle-01 #region-main .block .card-title {
-    background-color: var(--bger);
-    padding: 10px 10px 10px 10px !important;
-}
-.border-bottom {
-    border-bottom: 1px transparent!important;
-}
-.block .card-title {
-    background: transparent;
-}
-.block .block-cards a.coursename {
-    color: var(--fg);
-}
-.pagination ul > li > a,
-.pagination ul > li > span {
-    border: 1px transparent;
-    background-color: var(--bger);
-}
-.page-link {
-    color: var(--fg);
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.back-to-top,
-.socials p,
-#socialheading {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700!important;
-    color: var(--fg);
-}
-.block {
-    background: var(--bger);
-    border: transparent;
-}
-.block .content .userpicture {
-    border-radius: 50%;
-}
-.card.dashboard-card {
-    border: transparent;
-    background: var(--bger);
-}
-.block .block-cards .multiline {
-    color: var(--fg);
-}
-.text-muted {
-    color: var(--gray);
-    padding: 0px 0px 0px 10px;
-}
-a,
-a:visited,
-a.active,
-a:focus,
-#page-mod-scorm-player .breadcrumb-button a {
-    color: var(--fg);
-}
-.dropdown-menu {
-    background: var(--bger);
-    border: transparent;
-}
-#block-login div#user,
-#block-login div#pass {
-    height: 34px;
-}
-/* Footer */
-#page-footer,
-#page-footer .footerlinks,
-#page-footer .logininfo,
-.usertour {
-    background-color: var(--bger);
-    border-top: 3px solid var(--bger);
-}
-.usertour {
-    margin: 0px auto 2px;
-    max-width: 92%;
-}
-#page-footer .content a,
-#page-footer .footerlinks a,
-.footerlinks .helplink a {
-    color: var(--fg);
-}
-#page-footer .footerlinks .socials .social_icons a.social {
-    color: var(--bg);
-}
-/* buttons */
-.dropdown-menu .dropdown-item a {
-    color: var(--fg);
-}
-a:hover {
-    color: var(--blue);
-}
-button.btn.m-0 {
-    padding: 1px 12px 1px 12px;
-}
-button,
-.btn,
-.btn-default,
-input.form-submit,
-input[type="button"],
-input[type="submit"],
-input[type="reset"],
-input.form-submit,
-input#id_submitbutton,
-input#id_submitbutton2,
-.path-admin .buttons input[type="submit"],
-td.submit input,
-.submit.buttons input[name="cancel"],
-#notice .singlebutton + .singlebutton input,
-.jsenabled .breadcrumb-button .moodle-actionmenu[data-enhance],
-#submit,
-.message-app .container-fluid .col-4.d-flex.flex-column,
-.message-app .container-fluid .btn.btn-link,
-.message-app .container-fluid .btn.btn-link:hover {
-    background-color: var(--bger);
-}
-.input-append .add-on,
-.input-prepend .add-on {
-    border: transparent;
-}
-.message-app .container-fluid .accordion-body .list-group-item,
-#page-message-index #region-main .bg-light {
-    background-color: var(--bg)!important;
-}
-#page-message-index #region-main .bg-light,
-a#prev-activity-link,
-a#next-activity-link {
-    color: var(--fg)!important;
-}
-button:hover,
-button:focus,
-button:active,
-.btn:hover,
-.btn-default:hover,
-.btn-default:focus,
-.btn-default:active,
-.btn-default.active,
-.open .dropdown-toggle.btn-default,
-input.form-submit:hover,
-input[type="button"]:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-button:focus,
-input.form-submit:focus,
-input[type="button"]:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-button.active,
-input.form-submit.active,
-input.active[type="button"],
-input.active[type="submit"],
-input.active[type="reset"],
-button:active,
-input.form-submit:active,
-input[type="button"]:active,
-input[type="submit"]:active,
-input[type="reset"]:active,
-input.form-submit:hover,
-input#id_submitbutton:hover,
-input#id_submitbutton2:hover,
-.path-admin .buttons input[type="submit"]:hover,
-td.submit input:hover,
-input.form-submit:focus,
-input#id_submitbutton:focus,
-input#id_submitbutton2:focus,
-.path-admin .buttons input[type="submit"]:focus,
-td.submit input:focus,
-input.form-submit:active,
-input#id_submitbutton:active,
-input#id_submitbutton2:active,
-.path-admin .buttons input[type="submit"]:active,
-td.submit input:active,
-input.form-submit.active,
-input#id_submitbutton.active,
-input#id_submitbutton2.active,
-.path-admin .buttons input.active[type="submit"],
-td.submit input.active,
-input.form-submit.disabled,
-input#id_submitbutton.disabled,
-input#id_submitbutton2.disabled,
-.path-admin .buttons input.disabled[type="submit"],
-td.submit input.disabled,
-input.form-submit[disabled],
-input#id_submitbutton[disabled],
-input#id_submitbutton2[disabled],
-.path-admin .buttons input[type="submit"][disabled],
-td.submit input[disabled],
-#notice .singlebutton + .singlebutton input:hover,
-#submit:hover,
-.view-conversation.h-100,
-.message-app .container-fluid .col-8.d-flex.flex-column {
-    background-color: var(--bgest)!important;
-}
-#page-message-index #region-main div[role="main"] .message-app.main {
-    border: transparent;
-}
-.row-fluid .border-right {
-    border-right: transparent!important;
-}
-/* 00content */
-.block .card-title::before,
-.moodle-dialogue .fp-repo.nav-item.active {
-    background-color: var(--blue);
-}
+    /* ----- header */
+    #wrapper {
+        width: 100%;
+        max-width: 100%;
+        border-top: 4x solid var(--bg);
+    }
+    #page-header {
+        background: var(--bg);
+        border-radius: 2px;
+    }
+    .navbar,
+    .card {
+        background: var(--bger);
+    }
+    .navbar-inner {
+        background: var(--bger);
+    }
+    .navbar .btn-navbar:hover,
+    .navbar .btn-navbar:focus,
+    .navbar .btn-navbar:active,
+    .navbar .btn-navbar.active,
+    .navbar .btn-navbar.disabled,
+    .navbar .btn-navbar[disabled] {
+        background: var(--bger);
+    }
+    .navbar .btn-navbar {
+        background: var(--bg);
+    }
+    .navbar #search button[type="submit"] {
+        background: var(--bg) url(https://elearning.binadarma.ac.id/theme/image.php/lambda/theme/1580986309/bg/icon-search) no-repeat center center!important;
+        color: var(--fg);
+    }
+    .navbar #search button[type="submit"]:hover {
+        background: var(--bger) url(https://elearning.binadarma.ac.id/theme/image.php/lambda/theme/1580986309/bg/icon-search) no-repeat center center!important;
+        color: var(--fg);
+    }
+    .navbar #search input {
+        background: var(--bg);
+    }
+    .navbar #search:hover input#coursesearchbox {
+        background: var(--bg);
+    }
+    .navbar .brand {
+        background: var(--bgest);
+    }
+    .navbar .brand:hover {
+        background: var(--bgest);
+    }
+    .navbar .dropdown-menu {
+        border-bottom: 4px solid var(--bg);
+    }
+    .dropdown-menu > li > a {
+        color: var(--fg)!important;
+        background-color: var(--bger)!important;
+        border-radius: 8px;
+        transition: all 0.5s ease;
+    }
+    .navbar .nav > li > a:focus,
+    .navbar .nav > li > a:hover,
+    .navbar .nav > .active > a,
+    .navbar .nav > .active > a:hover,
+    .navbar .nav > .active > a:focus,
+    .navbar .nav li.dropdown.open > .dropdown-toggle,
+    .navbar .nav li.dropdown.active > .dropdown-toggle,
+    .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+        background: var(--bgest);
+    }
+    .navbar .dropdown-menu > li > a {
+        background-image: none;
+        background-color: var(--bg)!important;
+        color: var(--fg)!important;
+        border-bottom: transparent;
+        padding-left: 12px;
+    }
+    .navbar .dropdown-menu > li > a:hover {
+        background-image: none;
+        background-color: var(--bger)!important;
+        color: var(--fg)!important;
+        padding-left: 12px;
+    }
+    .moodle-actionmenu .dropdown-item .menu-action-text,
+    code,
+    pre {
+        color: var(--fg);
+    }
+    .moodle-actionmenu .dropdown-divider .filler {
+        border: transparent;
+        background: transparent;
+    }
+    .moodle-actionmenu .dropdown-item:hover {
+        background: var(--bger);
+    }
+    .moodle-actionmenu .dropdown-item .menu-action-text:hover {}
+    .caret {
+        border-top: 4px solid var(--fg);
+    }
+    #loggedin-user .usertext {
+        color: var(--fg);
+    }
+    /* body (base) */
+    .mr-auto,
+    .mx-auto,
+    .path-user #page-header .card {
+        background-color: var(--bger);
+    }
+    .path-user #region-main .profile_tree,
+    .path-user #region-main .profile_tree::before {
+        background: var(--bg) repeat-x scroll left top;
+    }
+    .userprofile .profile_tree section {
+        border: transparent;
+        background: var(--bger);
+    }
+    .profileblock .welcome_userpicture {
+        border-radius: 50%;
+    }
+    img.userpicture {
+        border-radius: 50%;
+    }
+    img.icon {
+        vertical-align: middle;
+        padding-bottom: 2px;
+    }
+    .path-user #region-main .page-context-header {
+        padding: 10px;
+        margin-bottom: -8px;
+    }
+    body {
+        background: none repeat scroll 0 0 var(--bg);
+        padding-top: 0;
+        color: var(--fg);
+    }
+    /* texts */
+    .breadcrumb > li {
+        text-shadow: 0 1px 0 var(--gray);
+    }
+    .block ul.block_tree a,
+    .breadcrumb a,
+    .instancename,
+    .block_book_toc li a,
+    .block_site_main_menu li a,
+    .navbottom .booknext,
+    .navbottom .bookprev,
+    .navbottom .bookexit {
+        color: var(--fg);
+    }
+    .breadcrumb {
+        color: var(--gray);
+    }
+    /* pages */
+    #page {
+        background: var(--bg);
+    }
+    .blockstyle-01 #region-main .block .card-title {
+        background-color: var(--bger);
+        padding: 10px 10px 10px 10px !important;
+    }
+    .border-bottom {
+        border-bottom: 1px transparent!important;
+    }
+    .block .card-title {
+        background: transparent;
+    }
+    .block .block-cards a.coursename {
+        color: var(--fg);
+    }
+    .pagination ul > li > a,
+    .pagination ul > li > span {
+        border: 1px transparent;
+        background-color: var(--bger);
+    }
+    .page-link {
+        color: var(--fg);
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .back-to-top,
+    .socials p,
+    #socialheading {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700!important;
+        color: var(--fg);
+    }
+    .block {
+        background: var(--bger);
+        border: transparent;
+    }
+    .block .content .userpicture {
+        border-radius: 50%;
+    }
+    .card.dashboard-card {
+        border: transparent;
+        background: var(--bger);
+    }
+    .block .block-cards .multiline {
+        color: var(--fg);
+    }
+    .text-muted {
+        color: var(--gray);
+        padding: 0px 0px 0px 10px;
+    }
+    a,
+    a:visited,
+    a.active,
+    a:focus,
+    #page-mod-scorm-player .breadcrumb-button a {
+        color: var(--fg);
+    }
+    .dropdown-menu {
+        background: var(--bger);
+        border: transparent;
+    }
+    #block-login div#user,
+    #block-login div#pass {
+        height: 34px;
+    }
+    /* Footer */
+    #page-footer,
+    #page-footer .footerlinks,
+    #page-footer .logininfo,
+    .usertour {
+        background-color: var(--bger);
+        border-top: 3px solid var(--bger);
+    }
+    .usertour {
+        margin: 0px auto 2px;
+        max-width: 92%;
+    }
+    #page-footer .content a,
+    #page-footer .footerlinks a,
+    .footerlinks .helplink a {
+        color: var(--fg);
+    }
+    #page-footer .footerlinks .socials .social_icons a.social {
+        color: var(--bg);
+    }
+    /* buttons */
+    .dropdown-menu .dropdown-item a {
+        color: var(--fg);
+    }
+    a:hover {
+        color: var(--blue);
+    }
+    button.btn.m-0 {
+        padding: 1px 12px 1px 12px;
+    }
+    button,
+    .btn,
+    .btn-default,
+    input.form-submit,
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"],
+    input.form-submit,
+    input#id_submitbutton,
+    input#id_submitbutton2,
+    .path-admin .buttons input[type="submit"],
+    td.submit input,
+    .submit.buttons input[name="cancel"],
+    #notice .singlebutton + .singlebutton input,
+    .jsenabled .breadcrumb-button .moodle-actionmenu[data-enhance],
+    #submit,
+    .message-app .container-fluid .col-4.d-flex.flex-column,
+    .message-app .container-fluid .btn.btn-link,
+    .message-app .container-fluid .btn.btn-link:hover {
+        background-color: var(--bger);
+    }
+    .input-append .add-on,
+    .input-prepend .add-on {
+        border: transparent;
+    }
+    .message-app .container-fluid .accordion-body .list-group-item,
+    #page-message-index #region-main .bg-light {
+        background-color: var(--bg)!important;
+    }
+    #page-message-index #region-main .bg-light,
+    a#prev-activity-link,
+    a#next-activity-link {
+        color: var(--fg)!important;
+    }
+    button:hover,
+    button:focus,
+    button:active,
+    .btn:hover,
+    .btn-default:hover,
+    .btn-default:focus,
+    .btn-default:active,
+    .btn-default.active,
+    .open .dropdown-toggle.btn-default,
+    input.form-submit:hover,
+    input[type="button"]:hover,
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    button:focus,
+    input.form-submit:focus,
+    input[type="button"]:focus,
+    input[type="submit"]:focus,
+    input[type="reset"]:focus,
+    button.active,
+    input.form-submit.active,
+    input.active[type="button"],
+    input.active[type="submit"],
+    input.active[type="reset"],
+    button:active,
+    input.form-submit:active,
+    input[type="button"]:active,
+    input[type="submit"]:active,
+    input[type="reset"]:active,
+    input.form-submit:hover,
+    input#id_submitbutton:hover,
+    input#id_submitbutton2:hover,
+    .path-admin .buttons input[type="submit"]:hover,
+    td.submit input:hover,
+    input.form-submit:focus,
+    input#id_submitbutton:focus,
+    input#id_submitbutton2:focus,
+    .path-admin .buttons input[type="submit"]:focus,
+    td.submit input:focus,
+    input.form-submit:active,
+    input#id_submitbutton:active,
+    input#id_submitbutton2:active,
+    .path-admin .buttons input[type="submit"]:active,
+    td.submit input:active,
+    input.form-submit.active,
+    input#id_submitbutton.active,
+    input#id_submitbutton2.active,
+    .path-admin .buttons input.active[type="submit"],
+    td.submit input.active,
+    input.form-submit.disabled,
+    input#id_submitbutton.disabled,
+    input#id_submitbutton2.disabled,
+    .path-admin .buttons input.disabled[type="submit"],
+    td.submit input.disabled,
+    input.form-submit[disabled],
+    input#id_submitbutton[disabled],
+    input#id_submitbutton2[disabled],
+    .path-admin .buttons input[type="submit"][disabled],
+    td.submit input[disabled],
+    #notice .singlebutton + .singlebutton input:hover,
+    #submit:hover,
+    .view-conversation.h-100,
+    .message-app .container-fluid .col-8.d-flex.flex-column {
+        background-color: var(--bgest)!important;
+    }
+    #page-message-index #region-main div[role="main"] .message-app.main {
+        border: transparent;
+    }
+    .row-fluid .border-right {
+        border-right: transparent!important;
+    }
+    /* 00content */
+    .block .card-title::before,
+    .moodle-dialogue .fp-repo.nav-item.active {
+        background-color: var(--blue);
+    }
 
-.calendar_event_course {
-    background-color: var(--red)
-}
+    .calendar_event_course {
+        background-color: var(--red)
+    }
 
-.fp-content-center form + div {
-    background-color: var(--bgest);
-    border: transparent;
-}
+    .fp-content-center form + div {
+        background-color: var(--bgest);
+        border: transparent;
+    }
 
-.fp-iconview .fp-filename-field .fp-filename,
-.file-picker .fp-content {
-    background-color: var(--bger)
-}
+    .fp-iconview .fp-filename-field .fp-filename,
+    .file-picker .fp-content {
+        background-color: var(--bger)
+    }
 
-.file-picker .fp-login-form .fp-login-input label {
-    text-align: left
-}
+    .file-picker .fp-login-form .fp-login-input label {
+        text-align: left
+    }
 
-.fp-iconview .fp-thumbnail,
-.fp-select .fp-thumbnail img {
-    border: transparent;
-}
+    .fp-iconview .fp-thumbnail,
+    .fp-select .fp-thumbnail img {
+        border: transparent;
+    }
 
-.fp-select .fp-thumbnail,
-.fp-iconview .fp-thumbnail img {
-    border: transparent;
-    box-shadow: none;
-}
+    .fp-select .fp-thumbnail,
+    .fp-iconview .fp-thumbnail img {
+        border: transparent;
+        box-shadow: none;
+    }
 
-.file-picker input[type="text"],
-.file-picker .fp-setlicense select,
-.fp-select .fp-thumbnail {
-    background-color: var(--bg);
-}
+    .file-picker input[type="text"],
+    .file-picker .fp-setlicense select,
+    .fp-select .fp-thumbnail {
+        background-color: var(--bg);
+    }
 
-.filemanager a,
-.file-picker a,
-.filemanager a:hover,
-.file-picker a:hover {
-    color: var(--fg)!important;
-}
+    .filemanager a,
+    .file-picker a,
+    .filemanager a:hover,
+    .file-picker a:hover {
+        color: var(--fg)!important;
+    }
 
-.moodle-dialogue-base .moodle-dialogue-wrap {
-    background: var(--bg);
-    color: var(--fg);
-}
+    .moodle-dialogue-base .moodle-dialogue-wrap {
+        background: var(--bg);
+        color: var(--fg);
+    }
 
-.moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd,
-.moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd.yui3-widget-hd {
-    background: var(--bg);
-    border: none;
-}
+    .moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd,
+    .moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd.yui3-widget-hd {
+        background: var(--bg);
+        border: none;
+    }
 
-.clearfix::before,
-.clearfix::after,
-.moodle-dialogue-base .moodle-dialogue.mod_quiz_preflight_popup .moodle-dialogue-bd #mod_quiz_preflight_form legend,
-#id_honestycheckheader {
-    background: var(--bgest);
-}
+    .clearfix::before,
+    .clearfix::after,
+    .moodle-dialogue-base .moodle-dialogue.mod_quiz_preflight_popup .moodle-dialogue-bd #mod_quiz_preflight_form legend,
+    #id_honestycheckheader {
+        background: var(--bgest);
+    }
 
-.moodle-dialogue-base .moodle-dialogue .moodle-dialogue-bd {
-    color: var(--fg)
-}
-.moodle-dialogue-base .moodle-dialogue-wrap {
-    border: 1px transparent;
-}
+    .moodle-dialogue-base .moodle-dialogue .moodle-dialogue-bd {
+        color: var(--fg)
+    }
+    .moodle-dialogue-base .moodle-dialogue-wrap {
+        border: 1px transparent;
+    }
 
-.path-mod-assign td.submissionnotgraded,
-.path-mod-assign div.submissionnotgraded,
-#block-login input[type="text"],
-#block-login input[type="password"],
-input[type="password"],
-#block-login div#user,
-#block-login div#pass,
-textarea {
-    background-color: var(--bger)!important;
-    color: var(--fg)!important;
-    border: transparent;
-}
-#page-user-preferences #region-main .card-body {
-    border: 1px transparent;
-    border-radius: 3px;
-}
-legend,
-.mform legend a,
-.mform legend a:hover {
-    color: var(--fg);
-}
-a.dropdown-item.menu-action:hover {
-    background: var(--bgest);
-    border-radius: 10px;
-    color: var(--fg)!important;
-    padding: 1px 8px 2px 8px;
-    transition: all 0.25s ease 0s;
-}
-a.dropdown-item.menu-action {
-    transition: all 0.25s ease 0s;
-    padding: 1px 3px 2px; 
-}
-.block-myoverview.block-cards .progress .bar {
-    background-color: var(--bidarBlue);
-}
-.content h3.sectionname a {
-    color: var(--fg);
-    padding: 0px 5px;
-}
-.content h3.sectionname {
-    background: var(--bidarBlue);
-    color: var(--bg);
-    border-color: var(--bg) var(--bg) var(--bg) var(--blue);
-    border-radius: 8px;
-    padding: 15px 5px;
-}
-.card-header {
-    padding: .75rem 1.25rem;
-    background-color: var(--bger);
-    border-bottom: 1px var(--bger);
-}
-.card {
-    border: transparent;
-}
-.card-footer.text-right.bg-transparent {
-    text-align: center;
-    padding: 3px;
-}
-.path-calendar .maincalendar .eventlist .event .description {
-    background-color: var(--bgest);
-    padding: 10px;
-}
-.course-content .current,
-table#form td.submit,
-.form-buttons,
-.path-admin .buttons,
-#fitem_id_submitbutton,
-div.backup-section + form,
-#fgroup_id_buttonar,
-.course-content .current .content {
-    background: var(--bg)!important;
-}
-.forumpost {
-    background-color: var(--bger)!important;
-    border: transparent!important;
-}
-.table-striped tbody > tr:nth-child(odd) > td,
-.table-striped tbody > tr:nth-child(odd) > th {
-    background-color: var(--bger)!important;
-    border-radius: 3px
-}
+    .path-mod-assign td.submissionnotgraded,
+    .path-mod-assign div.submissionnotgraded,
+    #block-login input[type="text"],
+    #block-login input[type="password"],
+    input[type="password"],
+    #block-login div#user,
+    #block-login div#pass,
+    textarea {
+        background-color: var(--bger)!important;
+        color: var(--fg)!important;
+        border: transparent;
+    }
+    #page-user-preferences #region-main .card-body {
+        border: 1px transparent;
+        border-radius: 3px;
+    }
+    legend,
+    .mform legend a,
+    .mform legend a:hover {
+        color: var(--fg);
+    }
+    a.dropdown-item.menu-action:hover {
+        background: var(--bgest);
+        border-radius: 10px;
+        color: var(--fg)!important;
+        padding: 1px 8px 2px 8px;
+        transition: all 0.25s ease 0s;
+    }
+    a.dropdown-item.menu-action {
+        transition: all 0.25s ease 0s;
+        padding: 1px 3px 2px;
+    }
+    .block-myoverview.block-cards .progress .bar {
+        background-color: var(--bidarBlue);
+    }
+    .content h3.sectionname a {
+        color: var(--fg);
+        padding: 0px 5px;
+    }
+    .content h3.sectionname {
+        background: var(--bidarBlue);
+        color: var(--bg);
+        border-color: var(--bg) var(--bg) var(--bg) var(--blue);
+        border-radius: 8px;
+        padding: 15px 5px;
+    }
+    .card-header {
+        padding: .75rem 1.25rem;
+        background-color: var(--bger);
+        border-bottom: 1px var(--bger);
+    }
+    .card {
+        border: transparent;
+    }
+    .card-footer.text-right.bg-transparent {
+        text-align: center;
+        padding: 3px;
+    }
+    .path-calendar .maincalendar .eventlist .event .description {
+        background-color: var(--bgest);
+        padding: 10px;
+    }
+    .course-content .current,
+    table#form td.submit,
+    .form-buttons,
+    .path-admin .buttons,
+    #fitem_id_submitbutton,
+    div.backup-section + form,
+    #fgroup_id_buttonar,
+    .course-content .current .content {
+        background: var(--bg)!important;
+    }
+    .forumpost {
+        background-color: var(--bger)!important;
+        border: transparent!important;
+    }
+    .table-striped tbody > tr:nth-child(odd) > td,
+    .table-striped tbody > tr:nth-child(odd) > th {
+        background-color: var(--bger)!important;
+        border-radius: 3px
+    }
 
-.table th,
-.table td {
-    background: var(--bg)!important;
-    border-top: 0px solid;
-}
+    .table th,
+    .table td {
+        background: var(--bg)!important;
+        border-top: 0px solid;
+    }
 
-.forumpost .header {
-    background-color: var(--bger);
-    border: transparent!important;
-    padding: 5px 5px 5px 0px;
-}
-.block .content .userpicture {
-    width: 20px;
-    height: 20px;
-    margin-right: 6px;
-}
-.fp-viewbar {
-    border: transparent;
-    background: transparent;
-}
-input[type=text],
-.custom-select,
-select[disabled] {
-    margin-bottom: 0!important;
-    background-color: var(--bger);
-    border: transparent;
-    color: var(--fg);
-}
-.fp-toolbar a.btn,
-.fp-viewbar a.btn,
-.fp-toolbar .fp-btn-add,
-.fp-toolbar .fp-btn-download,
-.fp-toolbar .fp-btn-mkdir,
-.fp-toolbar .fp-tb-help,
-.fp-toolbar .fp-tb-manage,
-.fp-toolbar .fp-tb-logout,
-.fp-toolbar .fp-tb-refresh {
-    margin-bottom: 0;
-    background-color: var(--bger)!important;
-    border: transparent;
-    color: var(--fg);
-}
-.fp-viewbar a.checked,
-.fp-viewbar a:active,
-.fp-toolbar a:hover,
-.fp-viewbar a:hover {
-    background-image: radial-gradient(ellipse at center, var(--bger) 100%);
-    background-color: var(--bger)!important;
-    color: var(--blue);
-}
-.filemanager-container.card {
-    border: transparent;
-}
-.filemanager .fp-navbar,
-.fp-pathbar {
-    background: var(--bger)!important;
-    border: transparent;
-}
+    .forumpost .header {
+        background-color: var(--bger);
+        border: transparent!important;
+        padding: 5px 5px 5px 0px;
+    }
+    .block .content .userpicture {
+        width: 20px;
+        height: 20px;
+        margin-right: 6px;
+    }
+    .fp-viewbar {
+        border: transparent;
+        background: transparent;
+    }
+    input[type=text],
+    .custom-select,
+    select[disabled] {
+        margin-bottom: 0!important;
+        background-color: var(--bger);
+        border: transparent;
+        color: var(--fg);
+    }
+    .fp-toolbar a.btn,
+    .fp-viewbar a.btn,
+    .fp-toolbar .fp-btn-add,
+    .fp-toolbar .fp-btn-download,
+    .fp-toolbar .fp-btn-mkdir,
+    .fp-toolbar .fp-tb-help,
+    .fp-toolbar .fp-tb-manage,
+    .fp-toolbar .fp-tb-logout,
+    .fp-toolbar .fp-tb-refresh {
+        margin-bottom: 0;
+        background-color: var(--bger)!important;
+        border: transparent;
+        color: var(--fg);
+    }
+    .fp-viewbar a.checked,
+    .fp-viewbar a:active,
+    .fp-toolbar a:hover,
+    .fp-viewbar a:hover {
+        background-image: radial-gradient(ellipse at center, var(--bger) 100%);
+        background-color: var(--bger)!important;
+        color: var(--blue);
+    }
+    .filemanager-container.card {
+        border: transparent;
+    }
+    .filemanager .fp-navbar,
+    .fp-pathbar {
+        background: var(--bger)!important;
+        border: transparent;
+    }
 
-a.btn.btn-link {
-    color: var(--gray)!important;
-}
+    a.btn.btn-link {
+        color: var(--gray)!important;
+    }
 
-li.page-item > A {
-    background: var(--bger);
-    border: transparent;
-}
-.page-item.active .page-link {
-    background-color: var(--blue);
-}
-a.page-link:hover, a.page-link:active, a.page-link:focus {
-    color: var(--bidarBlue);
-}
-.user-enroller-panel .uep-search-results .users tbody tr:hover > td,
-.user-enroller-panel .uep-search-results .cohorts tbody tr:hover > td,
-table.grading-report tbody tr:hover > td,
-.forumheaderlist tbody tr:hover > td,
-.generaltable tbody tr:hover > td,
-table.flexible tbody tr:hover > td,
-.category_subcategories tbody tr:hover > td,
-table#modules tbody tr:hover > td,
-table#permissions tbody tr:hover > td,
-.user-enroller-panel .uep-search-results .users tbody tr:hover > th,
-.user-enroller-panel .uep-search-results .cohorts tbody tr:hover > th,
-table.grading-report tbody tr:hover > th,
-.forumheaderlist tbody tr:hover > th,
-.generaltable tbody tr:hover > th,
-table.flexible tbody tr:hover > th,
-.category_subcategories tbody tr:hover > th,
-table#modules tbody tr:hover > th,
-table#permissions tbody tr:hover > th {
-    background-color: var(--bgest);
-}
+    li.page-item > A {
+        background: var(--bger);
+        border: transparent;
+    }
+    .page-item.active .page-link {
+        background-color: var(--blue);
+    }
+    a.page-link:hover,
+    a.page-link:active,
+    a.page-link:focus {
+        color: var(--bidarBlue);
+    }
+    .user-enroller-panel .uep-search-results .users tbody tr:hover > td,
+    .user-enroller-panel .uep-search-results .cohorts tbody tr:hover > td,
+    table.grading-report tbody tr:hover > td,
+    .forumheaderlist tbody tr:hover > td,
+    .generaltable tbody tr:hover > td,
+    table.flexible tbody tr:hover > td,
+    .category_subcategories tbody tr:hover > td,
+    table#modules tbody tr:hover > td,
+    table#permissions tbody tr:hover > td,
+    .user-enroller-panel .uep-search-results .users tbody tr:hover > th,
+    .user-enroller-panel .uep-search-results .cohorts tbody tr:hover > th,
+    table.grading-report tbody tr:hover > th,
+    .forumheaderlist tbody tr:hover > th,
+    .generaltable tbody tr:hover > th,
+    table.flexible tbody tr:hover > th,
+    .category_subcategories tbody tr:hover > th,
+    table#modules tbody tr:hover > th,
+    table#permissions tbody tr:hover > th {
+        background-color: var(--bgest);
+    }
 
-/* chat */
-.bg-faded,
-.bg-light,
-.bg-secondary {
-    background-color: var(--bg)!important;
-}
-.btn.btn-link,
-.fp-pathbar .fp-path-folder-name {
-    color: var(--fg)!important;
-}
-.message-drawer .list-group .list-group-item:first-child,
-.message-drawer .list-group .list-group-item,
-.list-group-item:last-child {
-    border-top: 0;
-    background: var(--bger);
-}
-.bg-white, .progress {
-    background: var(--bger)!important;
-}
-.border-top,
-textarea {
-    border: 0!important;
-}
-/* notif */
-.popover-region-container {
-    background-color: var(--bgest);
-    border: 1px solid var(--bg);
-    border-radius: 3px;
-    height: 564px;
-    width: 464px;
-    margin-top: 26px;
-}
-.all-notifications > .content-item-container {
-    padding: 16px;
-}
-.content-item-container .content-item-footer .timestamp {
-    margin-top: 12px;
-    margin-left: 38px;
-}
-.content-item-container .view-more {
-    display: none;
-}
-.popover-region-footer-container,
-.popover-region-header-container {
-    background-color: var(--bgest);
-    border: 1px solid var(--bgest);
-}
-.popover-region-content-container {
-    background: var(--bg);
-}
-.popover-region-header-container {
-    padding: 12px;
-}
-.popover-region-header-text {
-    line-height: 15px;
-}
-.popover-region-header-actions {
-    line-height: 14px;
-    padding-bottom: 9px;
-}
-.popover-region-footer-container .popover-region-seeall-text {
-    color: var(--fg);
-    padding-top:2px;
-}
-.popover-region-footer-container .popover-region-seeall-text:hover {
-    color: var(--blue);
-}
-.fa,
-.fab,
-.fal,
-.far,
-.fas,
-.content-item-container .content-item-footer .timestamp {
-    color: var(--fg);
-}
-table#explaincaps tbody > tr:nth-child(odd) > td,
-table#defineroletable tbody > tr:nth-child(odd) > td,
-table.grading-report tbody > tr:nth-child(odd) > td,
-table#listdirectories tbody > tr:nth-child(odd) > td,
-table.rolecaps tbody > tr:nth-child(odd) > td,
-table.userenrolment tbody > tr:nth-child(odd) > td,
-table#form tbody > tr:nth-child(odd) > td,
-form#movecourses table tbody > tr:nth-child(odd) > td,
-#page-admin-course-index .editcourse tbody > tr:nth-child(odd) > td,
-.forumheaderlist tbody > tr:nth-child(odd) > td,
-table.flexible tbody > tr:nth-child(odd) > td,
-.generaltable tbody > tr:nth-child(odd) > td,
-table#explaincaps tbody > tr:nth-child(odd) > th,
-table#defineroletable tbody > tr:nth-child(odd) > th,
-table.grading-report tbody > tr:nth-child(odd) > th,
-table#listdirectories tbody > tr:nth-child(odd) > th,
-table.rolecaps tbody > tr:nth-child(odd) > th,
-table.userenrolment tbody > tr:nth-child(odd) > th,
-table#form tbody > tr:nth-child(odd) > th,
-form#movecourses table tbody > tr:nth-child(odd) > th,
-#page-admin-course-index .editcourse tbody > tr:nth-child(odd) > th,
-.forumheaderlist tbody > tr:nth-child(odd) > th,
-table.flexible tbody > tr:nth-child(odd) > th,
-.generaltable tbody > tr:nth-child(odd) > th {
-    background-color: var(--bgest);
-    border: 1px solid var(--bgest);
-}
-.content-item-container.unread {
-    background-color: var(--bger);
-}
-.content-item-container {
-    border: transparent;
-}
-.content-item-container.unread {
-    background-color: var(--bg);
-}
-.content-item-container:hover {
-    background-color: var(--bger);
-}
-[src="https://elearning.binadarma.ac.id/pluginfile.php/600/mod_forum/post/350/izman1.jpg"] {
-    display: block;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background-image: url(https://i.kym-cdn.com/photos/images/original/000/096/044/trollface.jpg);
-    width: 180px;
-    height: 180px;
-    padding-left: 180px;
-    background-size: 180px 180px;
-}
+    /* chat */
+    .bg-faded,
+    .bg-light,
+    .bg-secondary {
+        background-color: var(--bg)!important;
+    }
+    .btn.btn-link,
+    .fp-pathbar .fp-path-folder-name {
+        color: var(--fg)!important;
+    }
+    .message-drawer .list-group .list-group-item:first-child,
+    .message-drawer .list-group .list-group-item,
+    .list-group-item:last-child {
+        border-top: 0;
+        background: var(--bger);
+    }
+    .bg-white,
+    .progress {
+        background: var(--bger)!important;
+    }
+    .border-top,
+    textarea {
+        border: 0!important;
+    }
+    /* notif */
+    .popover-region-container {
+        background-color: var(--bgest);
+        border: 1px solid var(--bg);
+        border-radius: 3px;
+        height: 564px;
+        width: 464px;
+        margin-top: 26px;
+    }
+    .all-notifications > .content-item-container {
+        padding: 16px;
+    }
+    .content-item-container .content-item-footer .timestamp {
+        margin-top: 12px;
+        margin-left: 38px;
+    }
+    .content-item-container .view-more {
+        display: none;
+    }
+    .popover-region-footer-container,
+    .popover-region-header-container {
+        background-color: var(--bgest);
+        border: 1px solid var(--bgest);
+    }
+    .popover-region-content-container {
+        background: var(--bg);
+    }
+    .popover-region-header-container {
+        padding: 12px;
+    }
+    .popover-region-header-text {
+        line-height: 15px;
+    }
+    .popover-region-header-actions {
+        line-height: 14px;
+        padding-bottom: 9px;
+    }
+    .popover-region-footer-container .popover-region-seeall-text {
+        color: var(--fg);
+        padding-top: 2px;
+    }
+    .popover-region-footer-container .popover-region-seeall-text:hover {
+        color: var(--blue);
+    }
+    .fa,
+    .fab,
+    .fal,
+    .far,
+    .fas,
+    .content-item-container .content-item-footer .timestamp {
+        color: var(--fg);
+    }
+    table#explaincaps tbody > tr:nth-child(odd) > td,
+    table#defineroletable tbody > tr:nth-child(odd) > td,
+    table.grading-report tbody > tr:nth-child(odd) > td,
+    table#listdirectories tbody > tr:nth-child(odd) > td,
+    table.rolecaps tbody > tr:nth-child(odd) > td,
+    table.userenrolment tbody > tr:nth-child(odd) > td,
+    table#form tbody > tr:nth-child(odd) > td,
+    form#movecourses table tbody > tr:nth-child(odd) > td,
+    #page-admin-course-index .editcourse tbody > tr:nth-child(odd) > td,
+    .forumheaderlist tbody > tr:nth-child(odd) > td,
+    table.flexible tbody > tr:nth-child(odd) > td,
+    .generaltable tbody > tr:nth-child(odd) > td,
+    table#explaincaps tbody > tr:nth-child(odd) > th,
+    table#defineroletable tbody > tr:nth-child(odd) > th,
+    table.grading-report tbody > tr:nth-child(odd) > th,
+    table#listdirectories tbody > tr:nth-child(odd) > th,
+    table.rolecaps tbody > tr:nth-child(odd) > th,
+    table.userenrolment tbody > tr:nth-child(odd) > th,
+    table#form tbody > tr:nth-child(odd) > th,
+    form#movecourses table tbody > tr:nth-child(odd) > th,
+    #page-admin-course-index .editcourse tbody > tr:nth-child(odd) > th,
+    .forumheaderlist tbody > tr:nth-child(odd) > th,
+    table.flexible tbody > tr:nth-child(odd) > th,
+    .generaltable tbody > tr:nth-child(odd) > th {
+        background-color: var(--bgest);
+        border: 1px solid var(--bgest);
+    }
+    .content-item-container.unread {
+        background-color: var(--bger);
+    }
+    .content-item-container {
+        border: transparent;
+    }
+    .content-item-container.unread {
+        background-color: var(--bg);
+    }
+    .content-item-container:hover {
+        background-color: var(--bger);
+    }
+    [src="https://elearning.binadarma.ac.id/pluginfile.php/600/mod_forum/post/350/izman1.jpg"] {
+        display: block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background-image: url(https://i.kym-cdn.com/photos/images/original/000/096/044/trollface.jpg);
+        width: 180px;
+        height: 180px;
+        padding-left: 180px;
+        background-size: 180px 180px;
+    }
 }
 
 @-moz-document url-prefix("https://www.binadarma.ac.id/") {
-/* colors */
-:root {
-    --bg: #2f3640;
-    --bger: #434758;
-    --bgest: #2A3039;
-    --fg: #f5f6fa;
-    --gray: #7f8fa6;
-    --blue: #37b0ff;
-    --bidarblue: #2271a3;
-}
+    /* colors */
+    :root {
+        --bg: #2f3640;
+        --bger: #434758;
+        --bgest: #2A3039;
+        --fg: #f5f6fa;
+        --gray: #7f8fa6;
+        --blue: #37b0ff;
+        --bidarblue: #2271a3;
+    }
 
-/* root */
-body {
-    color: var(--fg);
-}
+    /* root */
+    body {
+        color: var(--fg);
+    }
 
-/* background */
-.u_row.u_full_row {
-    background: var(--bg)!important;
-}
-.container-fluid {
-    background-color: var(--bg)!important;
-}
-.main-color-2-bg {
-    background: var(--bidarblue);
-}
+    /* background */
+    .u_row.u_full_row {
+        background: var(--bg)!important;
+    }
+    .container-fluid {
+        background-color: var(--bg)!important;
+    }
+    .main-color-2-bg {
+        background: var(--bidarblue);
+    }
 
 
-/* 0content */
-.path-login .card-header.text-center {
-    color: var(--bger);
-}
+    /* 0content */
+    .path-login .card-header.text-center {
+        color: var(--bger);
+    }
 
-.item-content a {
-    color: var(--blue);
-}
+    .item-content a {
+        color: var(--blue);
+    }
 
-.item-content a:hover,
-#main-nav .navbar-nav > li > a .menu-description {
-    color: var(--gray);
-}
+    .item-content a:hover,
+    #main-nav .navbar-nav > li > a .menu-description {
+        color: var(--gray);
+    }
 
-.btn.btn-default.btn-lighter {
-    color: var(--fg);
-}
+    .btn.btn-default.btn-lighter {
+        color: var(--fg);
+    }
 }
 
 @-moz-document url-prefix("https://sisfo.binadarma.ac.id/") {
-/* --C colors */
-:root {
-    --bg: #2f3640;
-    --bger: #434758;
-    --bgest: #2A3039;
-    --fg: #f5f6fa;
-    --gray: #7f8fa6;
-    --blue: #37b0ff;
-    --bidarblue: #2271a3;
-}
+    /* --C colors */
+    :root {
+        --bg: #2f3640;
+        --bger: #434758;
+        --bgest: #2A3039;
+        --fg: #f5f6fa;
+        --gray: #7f8fa6;
+        --blue: #37b0ff;
+        --bidarblue: #2271a3;
+    }
 
-img.responsive[src="https://sisfo.binadarma.ac.id//assets/images/get_it_on.png"] {
-    background: url(https://raw.githubusercontent.com/null2264/Zi-Dark/master/Web/Binadarma/assets/img/google-play-badge.png);
-    height: 43px;
-    display: block;
-    width: 106px;
-    padding-left: 106px;
-    background-size: 106px;
-    margin-top: -6px;
-}
+    img.responsive[src="https://sisfo.binadarma.ac.id//assets/images/get_it_on.png"] {
+        background: url(https://raw.githubusercontent.com/null2264/Zi-Dark/master/Web/Binadarma/assets/img/google-play-badge.png);
+        height: 43px;
+        display: block;
+        width: 106px;
+        padding-left: 106px;
+        background-size: 106px;
+        margin-top: -6px;
+    }
 
-/* --Txt text */
-.highcharts-title {
-    color: var(--fg);
-}
-.highcharts-title {
-    fill: var(--fg)!important;
-}
+    /* --Txt text */
+    .highcharts-title {
+        color: var(--fg);
+    }
+    .highcharts-title {
+        fill: var(--fg)!important;
+    }
 
-/* --0 root */
-body {
-    background-color: var(--bg);
-}
+    /* --0 root */
+    body {
+        background-color: var(--bg);
+    }
 
-/* --P panel */
-.panel {
-    background-color: var(--bger);
-}
+    /* --P panel */
+    .panel {
+        background-color: var(--bger);
+    }
 
-.panel-default {
-    border-color: transparent;
-}
+    .panel-default {
+        border-color: transparent;
+    }
 
-.panel-default > .panel-heading {
-    background-color: var(--bgest);
-    border-color: transparent;
-    background-image: linear-gradient(to bottom, var(--bgest) 0%, var(--bgest) 100%);
-    color: var(--fg);
-}
+    .panel-default > .panel-heading {
+        background-color: var(--bgest);
+        border-color: transparent;
+        background-image: linear-gradient(to bottom, var(--bgest) 0%, var(--bgest) 100%);
+        color: var(--fg);
+    }
 
-/* --Cnt content */
-.highcharts-background {
-    fill: var(--bger);
-}
+    /* --Cnt content */
+    .highcharts-background {
+        fill: var(--bger);
+    }
 
-/* login card */
-.card {
-    background: var(--bg);
-}
+    /* login card */
+    .card {
+        background: var(--bg);
+    }
 
-/* input textbox */
-.form-control {
-    padding-left: 10px !important;
-}
+    /* input textbox */
+    .form-control {
+        padding-left: 10px !important;
+    }
 
-/* logos */
-.input-group-addon {
-    color: var(--fg);
-}
+    /* logos */
+    .input-group-addon {
+        color: var(--fg);
+    }
 
-/* buttons */
-.login-page .login-box a {
-    color: var(--blue);
-}
+    /* buttons */
+    .login-page .login-box a {
+        color: var(--blue);
+    }
 
-.bg-indigo {
-    background-color: var(--blue) !important;
-}
+    .bg-indigo {
+        background-color: var(--blue) !important;
+    }
 }
